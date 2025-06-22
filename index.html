@@ -25,122 +25,186 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Style Sheet -->
-
-  <link rel="stylesheet" href="../css/stylesass.css">
+  <link rel="stylesheet" href="css/stylesass.css">
 </head>
+
 <body>
-<!-- BARRA DE NAVEGACION-->
-<nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container-fluid links_container">
-    <!-- LOGO BRAND -->
-    <a class="navbar-brand logo_container" href="index.html" title="Ir a Inicio">
-      <img src="../assets" alt=" class=">
-    </a>
-    <!-- MENÚ HAMBURGUESA (visible en mobile y tablet)-->
-    <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon menu_icon"></span>
-    </button>
-    <!--BARRA EN DESKTOP (un link al lado del otro a la derecha)-->
-    <div class="collapse navbar-collapse custom_collapse" id="navbarNav">
+  <!-- BARRA DE NAVEGACION-->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid links_container">
+      <!-- LOGO BRAND -->
+      <a class="navbar-brand logo_container" href="index.html" title="Ir a Inicio">
+        <img src="assets/loguito (2).png" alt="">
+        <span class="span-brand">Proyectos que transforman comunidades educativas</span>
+      </a>
+      <!-- MENÚ HAMBURGUESA (visible en mobile y tablet)-->
+      <button class="navbar-toggler custom_toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon menu_icon"></span>
+      </button>
+      <!--BARRA EN DESKTOP (un link al lado del otro a la derecha)-->
+      <div class="collapse navbar-collapse custom_collapse" id="navbarNav">
 
-      <div class="navbar-content container_custom_navbar">
-        <ul class="navbar-nav custom_navbar">
-          <li class="nav-item custom_item">
-            <a class="nav-link custom_links" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item custom_item">
-            <a class="nav-link custom_links" href="../sobre.mi.html">Sobre mí</a>
-          </li>
-          <li class="nav-item custom_item">
-            <a class="nav-link custom_links" href="../servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item custom_links">
-            <a class="nav-link-boton-turnos nav_turnos" href="turnos.html"> Agendá tu turno</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-<!-- SECCIÓN CARRUSEL-->
-<div id="carouselExample" class="carousel slide">
-  <div class="carousel-inner">
-
-    <!-- Primer Slide Consulta-->
-    <div class="carousel-item active">
-      <img src="assets/" class="d-block w-100" alt="">
-      <div class="carousel-caption-custom">
-        <h2></h2>
-        <p></p>
-        <div class="botones_container">
-          <a href="contacto.html" id="consulta">consulta</a>
+        <div class="navbar-content container_custom_navbar">
+          <ul class="navbar-nav custom_navbar">
+            <li class="nav-item custom_item">
+              <a class="nav-link custom_links" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item custom_item">
+              <a class="nav-link custom_links" href="../sobre.mi.html">Sobre mí</a>
+            </li>
+            <li class="nav-item custom_item">
+              <a class="nav-link custom_links" href="../servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item custom_links">
+              <a class="nav-link-boton-turnos nav_turnos" href="turnos.html"> Agendá tu turno</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- Segundo Slide Comunidad -->
-    <div class="carousel-item">
-      <img src="assets/" class="d-block w-100" alt="">
-      <div class="carousel-caption-custom">
-        <h2></h2>
-        <p> </p>
-        <div class="botones_container">
-          <a href="comunidad.html" id="conoce-mas">Conocé más</a>
+  </nav>
+  <main>
+    <!-- BIENVENIDA-->
+    <h1 class="bienvenida">Welcome to JS</h1>
+    <p class="p-bienvenida">Este espacio fue creado para acompañarte a aprender inglés de manera accesible,
+      personalizada y sin barreras.Ofrezco clases online, asesorías y viajes educativos, culturales y recreacionales al
+      Reino Unido, para que puedas practicar el idioma en contextos reales y con confianza.
+    </p>
+    <!-- SECCIÓN CARRUSEL-->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
 
+        <!-- Primer Slide Consulta-->
+        <div class="carousel-item active">
+          <img src="assets/travel-london.png" class="d-block w-100" alt="">
+          <div class="carousel-caption-custom">
+            <h2>Viajes a Reino Unido</h2>
+            <p>Sumate a una experiencia única para vivir el inglés en acción.</p>
+            <div class="botones_container">
+              <a href="contacto.html" id="consulta">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Segundo Slide Comunidad -->
+        <div class="carousel-item">
+          <img src="assets/consulting.png" class="d-block w-100" alt="">
+          <div class="carousel-caption-custom">
+            <h2>Asesorias</h2>
+            <p>Asesoro a escuelas e institutos que desean ofrecer a sus alumnos experiencias transformadoras:
+              certificaciones internacionales </p>
+            <div class="botones_container">
+              <a href="comunidad.html" id="consulta">Conocé más</a>
+
+            </div>
+          </div>
+        </div>
+        <!-- tercer slide Slide (talleres) -->
+        <div class="carousel-item">
+          <img src="assets/onile1 1.png" class="d-block w-100" alt="">
+          <div class="carousel-caption-custom">
+            <h2>Clases online</h2>
+            <p>Accedé a clases personalizadas desde cualquier lugar del mundo.</p>
+            <div class="botones_container">
+              <a href="talleres.html" id="consulta">Contactame</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev previo" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon custom" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next siguiente" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon custom" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    </section>
+
+    <!-- SECCIÓN MISION, VISION Y VALORES-->
+    <section class="mvv-section">
+      <div class="card-mvv">
+        <!-- Misión -->
+        <div class="icon-container">
+          <img src="assets/mision.png" alt="Icono Misión">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Misión</span>
+          <p>
+            Acompañar a escuelas, institutos y estudiantes en el diseño e implementación de proyectos de inglés con
+            sentido. Lo hacemos con compromiso, calidez y una mirada pedagógica centrada en el proceso de cada alumno y
+            cada institución.
+
+          </p>
+        </div>
+
+      </div>
+      <!-- Visión -->
+      <div class="card-mvv">
+        <div class="icon-container">
+          <img src="assets/vision.png" alt="Ícono de Visión">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Visión</span>
+          <p>
+            Ser referente en propuestas educativas significativas que integren el idioma inglés como herramienta para la
+            proyección personal, académica y profesional.
+          </p>
         </div>
       </div>
-    </div>
-    <!-- tercer slide Slide (talleres) -->
-    <div class="carousel-item">
-      <img src="assets/" class="d-block w-100" alt="">
-      <div class="carousel-caption-custom">
-        <h2></h2>
-        <p></p>
-        <div class="botones_container">
-          <a href="talleres.html" id="conoce-mas">Conocé más</a>
+      <!-- Valores -->
+      <div class="card-mvv">
+        <div class="icon-container">
+          <img src="assets/valores.png" alt="Ícono de Valores">
+        </div>
+        <div class="card-content">
+          <span class="card-title">Valores</span>
+          <p>
+            Compromiso, respeto, empatía, responsabilidad y pasión por acompañar procesos de aprendizaje auténticos,
+            conectados con las necesidades reales de los estudiantes.
+          </p>
         </div>
       </div>
-    </div>
-
-  </div>
-  <button class="carousel-control-prev previo" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon custom" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next siguiente" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon custom" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
-<!-- SECCIÓN PREGUNTAS FRECUENTES-->
-<footer> <!-- Footer con divisiones y un p abajo -->
+    </section>
+    <!-- SECCIÓN PREGUNTAS FRECUENTES-->
+  </main>
+  <!-- Bootstrap JS vía CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
     <section>
       <div>
-        <img src="assets/logo_footer.png" alt="Logo de JS">
-     
+        <img src="assets/logo-blanco.png" alt="Logo de JS">
       </div>
+
+      <div>
+        <h3 class="footer_contacto">Servicios</h3>
+        <p>Asesorías Institucionales</p>
+        <p>Clases online</p>
+        <p>Viajes educativos y recreativos</p>
+      </div>
+
       <div>
         <h3 class="footer_contacto">Contacto</h3>
-        <p>Mail: @gmail.com</p>
-        <p>Teléfono: </p>
+        <p>Mail: silviajardon.sm@gmail.com</p>
+        <p>Teléfono: +5493804612222</p>
       </div>
-      </div>
+
       <div class="redes">
         <h3 class="footer">Nuestras redes</h3>
         <div class="iconos">
-          <img src="assets/svg-linkedin.png" alt="Ir al perfil de linkeding de JS" title="Ir al perfil de Linkeding"
+          <img src="assets/svg-linkedin.png" alt="Ir al perfil de LinkedIn de JS" title="LinkedIn" class="icono-redes">
+          <img src="assets/svg-instagram.png" alt="Ir al perfil de Instagram de JS" title="Instagram"
             class="icono-redes">
-          <img src="assets/svg-instagram.png" alt="Ir al perfil de Instagram de JS" title="Ir al perfil de Instagram"
-            class="icono-redes">
-          <img src="assets/svg-mail.png" alt="Enviar un mail a JS" title="Enviar un mail"
-            class="icono-redes">
+          <img src="assets/svg-mail.png" alt="Enviar un mail a JS" title="Email" class="icono-redes">
         </div>
       </div>
     </section>
     <hr>
     <p class="footer_derechos_reservados">© 2000 JS - Todos los Derechos Reservados</p>
-
+  </footer>
 
 </body>
 

@@ -1,4 +1,5 @@
 @use 'variables' as *;
+
 /*-----------------------FOOTER-------------------------------*/
 footer {
   background-color: $primario;
@@ -20,43 +21,42 @@ footer {
 
     // DIVISIONES DENTRO DE LA SECCIÓN
     div {
-      flex: 1 1 22%;
+      flex: 1 50%;
       margin: 20px;
       flex-direction: column;
-      align-items: flex-start;
-      &.bienestar {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-
+      align-items: center;
+ 
         img {
           max-width: 150px;
-          height: 350px;
-          width: 350px;
+          height: 40%;
+          width: 40%;
           align-items: center;
         }
       }
       h3 {
         text-align: left;
+        font-family: $h;
         font-weight: normal;
+        font-size: 24px;
       }
-    }
+    
   }
   p {
     text-align: left;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: $azul;
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
     display: block;
     margin-bottom: 0;
+    font-family: $p;
+    font-weight: $thin;
 
   
     &.footer_derechos_reservados {
       text-align: left;
       margin-top: 8px;
       font-size: 1rem;
-      color: $azul;
+      color: white;
       margin-bottom: 0;
       flex-basis: 100%;
     }
@@ -76,9 +76,11 @@ footer {
       gap: 10px;
       justify-content: center;
       cursor: pointer;
+     margin: 8px;
 
       .icono-redes {
         width: 32px;
+        gap: 10px;
       }
     }
   }

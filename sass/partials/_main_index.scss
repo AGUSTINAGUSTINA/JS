@@ -1,0 +1,143 @@
+@use 'variables' as *;
+.bienvenida {
+  font-family: $h;
+  color: $primario;
+  font-size: 48px;
+  background-color: $bg-1;
+  text-align: center;
+}
+.p-bienvenida {
+   font-family: $p;
+  color: black;
+  font-size: 18px;
+  background-color: $bg-1;
+  text-align: center;
+  padding-right: 2%;
+  padding-left: 2%;
+
+}
+
+//primer slide
+
+
+.carousel-caption-custom {
+  position: absolute;
+  top: 35%;
+  left: 13%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 400px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Centra el contenido dentro del cuadro
+  text-align: center;
+  z-index: 10;
+
+  h2 {
+    font-family: $h;
+    color: $primario;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-family: $p;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  .botones_container {
+    a#consulta {
+      background-color: $primario;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: $p;
+      font-size: 16px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $bg2;
+        color: $primario;
+        border: 2px solid $primario;
+      }
+    }
+  }
+}
+
+.frase{
+  font-family: $h;
+  font-size: 24px;
+  text-align: center;
+  color: $primario;
+  padding: 5%;
+ 
+}
+
+//SECCIÓN MISION, VISION Y VALORES
+.mvv-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  align-items: flex-start;
+  width: 100%; /* importante */
+  max-width: 1200px; /* opcional para no ser muy ancho */
+  margin: 0 auto;
+  border: 1px solid transparent; /* para debug, borrá luego */
+}
+
+.card-mvv {
+  background-color: #BCC5C8;
+  border-radius: 28px;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  text-align: center;
+  max-width: 320px;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  margin-top: 50px;
+
+  flex: 0 0 320px; /* ancho fijo, no crece ni se achica */
+
+  .icon-container {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+  }
+
+  .card-content {
+    margin-top: 30px;
+
+    .card-title {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: #264653;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}
