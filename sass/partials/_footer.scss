@@ -1,0 +1,85 @@
+@use 'variables' as *;
+/*-----------------------FOOTER-------------------------------*/
+footer {
+  background-color: $primario;
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+
+  // SECCIÓN
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    // DIVISIONES DENTRO DE LA SECCIÓN
+    div {
+      flex: 1 1 22%;
+      margin: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      &.bienestar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        img {
+          max-width: 150px;
+          height: 350px;
+          width: 350px;
+          align-items: center;
+        }
+      }
+      h3 {
+        text-align: left;
+        font-weight: normal;
+      }
+    }
+  }
+  p {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: $azul;
+    display: block;
+    margin-bottom: 0;
+
+  
+    &.footer_derechos_reservados {
+      text-align: left;
+      margin-top: 8px;
+      font-size: 1rem;
+      color: $azul;
+      margin-bottom: 0;
+      flex-basis: 100%;
+    }
+  }
+
+//REDES
+  .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    .iconos {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+      cursor: pointer;
+
+      .icono-redes {
+        width: 32px;
+      }
+    }
+  }
+}
