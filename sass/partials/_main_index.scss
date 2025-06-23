@@ -141,3 +141,84 @@
     }
   }
 }
+//SECCION TESTIMONIOS
+.testimonios-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px 20px;
+  align-items: flex-start;
+  width: 100%; /* importante */
+  max-width: 1200px; /* opcional para no ser muy ancho */
+  margin: 0 auto;
+  border: 1px solid transparent; /* para debug, borrá luego */
+}
+
+.card-testimonios {
+  background-color: #C9C1D0;
+  border-radius: 28px;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  text-align: center;
+  max-width: 320px;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border: 2px solid $secundario;
+  flex: 0 0 320px; /* ancho fijo, no crece ni se achica */
+
+  .icon-container {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $secundario;
+    border-radius: 50%;
+    padding: 3px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+  }
+
+  .card-content {
+    margin-top: 30px;
+
+    .card-name {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      color: $secundario;
+    }
+
+    p {
+      font-size: 14px;
+      color: black;
+      line-height: 1.5;
+      margin: 0;
+    }
+  }
+}
+.section-frase{
+   display: flex;
+  justify-content: center;    // Centra horizontalmente
+  align-items: center;        // Centra verticalmente
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px;              // Opcional: da respiro alrededor
+  text-align: center;    
+}
+.frase{
+  text-align: center;
+  font-weight: $regular;
+  font-family: $h;
+  font-size: 18px;
+  background-color: $primario;
+  padding: 50px 180px 50px 180px;
+  color: white;
+}
