@@ -133,14 +133,18 @@
   width: 70vw;
   margin-left: auto; // se alinea a la derecha
   margin-right: 0;
+  align-items: center;
+  min-height: 400px;
 
   .contenido-viajes {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    min-height: 400px;
   }
 
   .texto-viajes {
@@ -149,6 +153,7 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
+    margin-left: 60px;
 
     .titulo-icono {
       display: flex;
@@ -173,6 +178,7 @@
       margin-top: 20px;
       font-size: 18px;
       color: #264653;
+      margin-bottom: 10px;
     }
 
     p {
@@ -180,7 +186,8 @@
       font-size: 16px;
       color: #333;
       line-height: 1.6;
-      margin-top: 10px;
+      margin-top: 0px !important;
+      text-align: left;
     }
 
     .boton-viaje {
@@ -193,11 +200,11 @@
       padding: 0 40px;
       height: 90px;
       border-radius: 8px;
-      width: 930px;
+      width: 556px;
       max-width: 100%;
       margin: 30px auto 0 auto;
       position: relative;
-      right: 200px;
+      right: 380px;
 
       a {
         text-decoration: none;

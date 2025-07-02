@@ -643,14 +643,18 @@ h2.testimonio {
   width: 70vw;
   margin-left: auto;
   margin-right: 0;
+  align-items: center;
+  min-height: 400px;
 }
 .viajes-uk .contenido-viajes {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 400px;
 }
 .viajes-uk .texto-viajes {
   flex: 1 1 500px;
@@ -658,6 +662,7 @@ h2.testimonio {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  margin-left: 60px;
 }
 .viajes-uk .texto-viajes .titulo-icono {
   display: flex;
@@ -679,13 +684,15 @@ h2.testimonio {
   margin-top: 20px;
   font-size: 18px;
   color: #264653;
+  margin-bottom: 10px;
 }
 .viajes-uk .texto-viajes p {
   font-family: "Roboto flex";
   font-size: 16px;
   color: #333;
   line-height: 1.6;
-  margin-top: 10px;
+  margin-top: 0px !important;
+  text-align: left;
 }
 .viajes-uk .texto-viajes .boton-viaje {
   display: flex;
@@ -697,11 +704,11 @@ h2.testimonio {
   padding: 0 40px;
   height: 90px;
   border-radius: 8px;
-  width: 930px;
+  width: 556px;
   max-width: 100%;
   margin: 30px auto 0 auto;
   position: relative;
-  right: 200px;
+  right: 380px;
 }
 .viajes-uk .texto-viajes .boton-viaje a {
   text-decoration: none;
