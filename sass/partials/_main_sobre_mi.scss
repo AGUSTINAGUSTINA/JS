@@ -1,0 +1,72 @@
+@use 'variables' as *;
+
+.sobre-mi {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap; // Para que en móvil se apilen
+
+    .img-silvia {
+        flex: 0 0 auto; // que no crezca ni se achique
+
+        img {
+            height: 580px;
+            width: auto;
+            object-fit: cover;
+            border-radius: 16px;
+            display: block;
+        }
+    }
+
+    .texto-sobre-mi {
+        flex: 1 1 500px;
+        align-content: flex-start;
+        text-align: left !important;
+
+        h2 {
+            font-family: $h;
+            color: $primario;
+            margin-bottom: 15px;
+            font-size: 32px;
+            text-align: left !important;
+        }
+
+        p {
+            font-family: $p;
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: left !important;
+        }
+    }
+
+    h3 {
+        font-family: $h;
+        color: $primario;
+        margin-bottom: 15px;
+        font-size: 24px;
+        text-align: left !important;
+    }
+
+    .resaltado {
+        font-weight: bold;
+        font-family: $p;
+    }
+}
+
+.lista-servicios {
+    list-style-type: disc; // viñetas redondas
+    padding-left: 20px;
+    font-family: $p;
+    font-size: 16px;
+    color: #333;
+
+    li {
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+}

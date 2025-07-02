@@ -17,7 +17,7 @@
 
 }
 
-//primer slide
+//CARRUSEL
 
 
 .carousel-caption-custom {
@@ -38,13 +38,13 @@
   h2 {
     font-family: $h;
     color: $primario;
-    font-size: 24px;
+    font-size: 32px;
     margin-bottom: 10px;
   }
 
   p {
     font-family: $p;
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
     margin-bottom: 16px;
   }
@@ -84,10 +84,11 @@
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+
   padding: 40px 20px;
   align-items: flex-start;
-  width: 100%; /* importante */
-  max-width: 1200px; /* opcional para no ser muy ancho */
+  width: 100%; 
+  max-width: 1200px; 
   margin: 0 auto;
   border: 1px solid transparent; /* para debug, borrá luego */
 }
@@ -97,6 +98,7 @@
   border-radius: 28px;
   padding: 40px 20px 20px 20px;
   position: relative;
+    height: 280px;
   text-align: center;
   max-width: 320px;
   /* margin: auto; */
@@ -142,6 +144,13 @@
   }
 }
 //SECCION TESTIMONIOS
+h2.testimonio{
+  font-family: $h;
+  font-size: 32px;
+  font-weight: $regular;
+  color: $primario;
+  margin-left: 35px;
+}
 .testimonios-section {
   display: flex;
   justify-content: center;
@@ -217,8 +226,9 @@
   text-align: center;
   font-weight: $regular;
   font-family: $h;
-  font-size: 18px;
-  background-color: $primario;
+  font-size: 24px;
+  background-color: #005D66;
   padding: 50px 180px 50px 180px;
-  color: white;
+  color: $bg-1;
+  text-shadow: #333;
 }

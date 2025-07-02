@@ -30,6 +30,7 @@
 </head>
 
 <body>
+  <header>
   <!-- BARRA DE NAVEGACION-->
   <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container-fluid links_container">
@@ -52,22 +53,24 @@
               <a class="nav-link custom_links" href="index.html">Inicio</a>
             </li>
             <li class="nav-item custom_item">
-              <a class="nav-link custom_links" href="../sobre.mi.html">Sobre mí</a>
+              <a class="nav-link custom_links" href="pages/sobre-mi.html">Sobre mí</a>
             </li>
             <li class="nav-item custom_item">
-              <a class="nav-link custom_links" href="../servicios.html">Servicios</a>
+              <a class="nav-link custom_links" href="pages/servicios.html">Servicios</a>
             </li>
             <li class="nav-item custom_links">
-              <a class="nav-link-boton-turnos nav_turnos" href="https://calendly.com" target="_blank" rel="noopener noreferrer"> Agendá tu turno</a>
+              <a class="nav-link-boton-turnos nav_turnos" href="https://calendly.com" target="_blank"
+                rel="noopener noreferrer"> Agendá tu turno</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </nav>
+  </header>
   <main>
     <!-- BIENVENIDA-->
-    <h1 class="bienvenida">Welcome to JS</h1>
+    <h1>Welcome to JS</h1>
     <p class="p-bienvenida">Este espacio fue creado para acompañarte a aprender inglés de manera accesible,
       personalizada y sin barreras.Ofrezco clases online, asesorías y viajes educativos, culturales y recreacionales al
       Reino Unido, para que puedas practicar el idioma en contextos reales y con confianza.
@@ -83,7 +86,7 @@
             <h2>Viajes a Reino Unido</h2>
             <p>Sumate a una experiencia única para vivir el inglés en acción.</p>
             <div class="botones_container">
-              <a href="contacto.html" id="consulta">Ver más</a>
+              <a href="pages/viajes.html" id="consulta">Ver más</a>
             </div>
           </div>
         </div>
@@ -128,7 +131,7 @@
 
     <!-- SECCIÓN PREGUNTAS FRECUENTES-->
 
-     <!-- SECCIÓN MISION, VISION Y VALORES-->
+    <!-- SECCIÓN MISION, VISION Y VALORES-->
     <section class="mvv-section">
       <div class="card-mvv">
         <!-- Misión -->
@@ -174,40 +177,55 @@
       </div>
     </section>
     <section class="section-frase">
-  <span class="frase" data-aos="fade-right">
-    Aprender inglés puede ser una puerta hacia nuevas oportunidades y estoy acá para ayudarte a abrirla
-  </span>
-</section>
-        <!-- Testimonios-->
-         <h2>Testimonios</h2>
+      <span class="frase" data-aos="fade-right">
+        Aprender inglés puede ser una puerta hacia nuevas oportunidades y estoy acá para ayudarte a abrirla
+      </span>
+    </section>
+    <!-- Testimonios-->
+    <h2 class="testimonio">Testimonios</h2>
     <section class="testimonios-section">
-      
-      <div class="card-testimonios">
+
         <!-- Testimonio 1 -->
+        <div class="card-testimonios">
+          <div class="icon-container">
+            <img src="assets/testimonio 2.png" alt="dibujo de mujer">
+          </div>
+          <div class="card-content">
+
+            <p>
+              Mi experiencia aprendiendo inglés con Silvia está siendo fantástica. Las clases se hacen muy amenas y mi
+              progreso es significante ya que Silvia enfoca las clases con flexibilidad analizando los puntos fuertes y
+              débiles que tengo no solo en cuanto a mi nivel de inglés sino a lo que necesito estudiar en el momento en
+              que me encuentro para así no desistir en el empeño de seguir mejorando. Siempre tiene palabras de aliento
+              para continuar mejorando, para dar pasos hacia adelante aunque sean poco a poco debido al tiempo que
+              dispongo y esa comprensión la verdad que se agradece, no me siento solo en esta tarea sino que me siento
+              arropado en el reto de aprender, como si fuéramos un equipo, con lo que se consigue una mayor vinculación
+              a los estudios.
+            </p>
+            <span class="card-name">Fulana</span>
+          </div>
+        </div>
+
+
+        <!-- testimonio 2 -->
+         
+      <div class="card-testimonios">
         <div class="icon-container">
           <img src="assets/testimonio-1.png" alt="dibujo de hombre">
         </div>
         <div class="card-content">
-        
+
           <p>
-           Cuando decidimos con mi esposa que nuestro hijo viajara, aparecieron muchos miedos, pero el viaje estuvo a la medida lo mejor fue que fuimos consultados en todo, nada fue impuesto, se eligieron los mejores destinos, Londres, Irlanda, liverpool, Edimburgo y Dublín la mejor hotelería, los chicos eligieron  que lugares querian conocer y que experiencia vivir, lo mejor que tuvo el viaje fue la seguridad y confianza que nos brindo Miss Silvia, desde que subió al avión hasta el día de regreso, y sobre todo el aprendizaje que sumo, súper agradecido por todo y sin dudar lo recomendaría.
+            Cuando decidimos con mi esposa que nuestro hijo viajara, aparecieron muchos miedos, pero el viaje estuvo a
+            la medida lo mejor fue que fuimos consultados en todo, nada fue impuesto, se eligieron los mejores destinos,
+            Londres, Irlanda, liverpool, Edimburgo y Dublín la mejor hotelería, los chicos eligieron que lugares querian
+            conocer y que experiencia vivir, lo mejor que tuvo el viaje fue la seguridad y confianza que nos brindo Miss
+            Silvia, desde que subió al avión hasta el día de regreso, y sobre todo el aprendizaje que sumo, súper
+            agradecido por todo y sin dudar lo recomendaría.
           </p>
-            <span class="card-name">Adrián Acevedo</span>
+          <span class="card-name">Adrián Acevedo</span>
         </div>
 
-      </div>
-      <!-- testimonio 2 -->
-      <div class="card-testimonios">
-        <div class="icon-container">
-          <img src="assets/testimonio 2.png" alt="dibujo de mujer">
-        </div>
-        <div class="card-content">
-          
-          <p>
-           Mi experiencia aprendiendo inglés con Silvia está siendo fantástica. Las clases se hacen muy amenas y mi progreso es significante ya que Silvia enfoca las clases con flexibilidad analizando los puntos fuertes y débiles que tengo no solo en cuanto a mi nivel de inglés sino a lo que necesito estudiar en el momento en que me encuentro para así no desistir en el empeño de seguir mejorando. Siempre tiene palabras de aliento para continuar mejorando, para dar pasos hacia adelante aunque sean poco a poco debido al tiempo que dispongo y esa comprensión la verdad que se agradece, no me siento solo en esta tarea sino que me siento arropado en el reto de aprender, como si fuéramos un equipo, con lo que se consigue una mayor vinculación a los estudios.
-          </p>
-          <span class="card-name">Fulana</span>
-        </div>
       </div>
       <!-- Testimonio 3 -->
       <div class="card-testimonios">
@@ -215,24 +233,26 @@
           <img src="assets/testimonio 3.png" alt="dibujo de mujer">
         </div>
         <div class="card-content">
-        
+
           <p>
-          El viaje con Silvia fue hermoso, es un viaje inolvidable donde uno aprende un montón, no solamente de ingles sino también sobre las culturas, conoces lugares muy hermosos y es un viaje que se aprovecha al máximo!
+            El viaje con Silvia fue hermoso, es un viaje inolvidable donde uno aprende un montón, no solamente de
+            ingles sino también sobre las culturas, conoces lugares muy hermosos y es un viaje que se aprovecha al
+            máximo!
           </p>
-            <span class="card-name">Mengana</span>
+          <span class="card-name">Mengana</span>
         </div>
       </div>
     </section>
-      <!-- Botón de WhatsApp -->
+    <!-- Botón de WhatsApp -->
     <a href="https://wa.me/+5493804612222" class="floating-whatsapp">
       <img src="assets/icon_whatsapp.png" alt="Icono de WhatsApp para contactar al centro odontológico">
     </a>
   </main>
-     <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Bootstrap JS vía CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <footer>
@@ -255,7 +275,7 @@
       </div>
 
       <div class="redes">
-        <h3 class="footer">Nuestras redes</h3>
+        <h3 class="footer">Redes Sociales</h3>
         <div class="iconos">
           <img src="assets/svg-linkedin.png" alt="Ir al perfil de LinkedIn de JS" title="LinkedIn" class="icono-redes">
           <img src="assets/svg-instagram.png" alt="Ir al perfil de Instagram de JS" title="Instagram"

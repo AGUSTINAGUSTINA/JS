@@ -15,6 +15,35 @@ body {
   background-color: #F4F4F4;
 }
 
+h1 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 4px 4px 34px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  font-size: 32x;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  font-size: 24x;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto flex";
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+
 /* CONTIENE EL LOGO PRINCIPAL Y NAV BAR */
 /* LOGO PRINCIPAL */
 .logo_container {
@@ -123,8 +152,6 @@ de navegacion en mobile*/
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1.5px;
-  color: #264653;
-  transition: all 0.4s ease-in-out;
 }
 
 .nav_turnos {
@@ -203,6 +230,7 @@ footer section h3 {
   font-family: "Playfair Display", serif;
   font-weight: normal;
   font-size: 24px;
+  color: white;
 }
 footer p {
   text-align: left;
@@ -278,12 +306,12 @@ footer .redes .iconos .icono-redes {
 .carousel-caption-custom h2 {
   font-family: "Playfair Display", serif;
   color: #264653;
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 .carousel-caption-custom p {
   font-family: "Roboto flex";
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
   margin-bottom: 16px;
 }
@@ -318,8 +346,8 @@ footer .redes .iconos .icono-redes {
   flex-wrap: wrap;
   padding: 40px 20px;
   align-items: flex-start;
-  width: 100%; /* importante */
-  max-width: 1200px; /* opcional para no ser muy ancho */
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   border: 1px solid transparent; /* para debug, borrá luego */
 }
@@ -329,6 +357,7 @@ footer .redes .iconos .icono-redes {
   border-radius: 28px;
   padding: 40px 20px 20px 20px;
   position: relative;
+  height: 280px;
   text-align: center;
   max-width: 320px;
   /* margin: auto; */
@@ -366,6 +395,14 @@ footer .redes .iconos .icono-redes {
   color: #333;
   line-height: 1.5;
   margin: 0;
+}
+
+h2.testimonio {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #264653;
+  margin-left: 35px;
 }
 
 .testimonios-section {
@@ -440,10 +477,342 @@ footer .redes .iconos .icono-redes {
   text-align: center;
   font-weight: 400;
   font-family: "Playfair Display", serif;
-  font-size: 18px;
-  background-color: #264653;
+  font-size: 24px;
+  background-color: #005D66;
   padding: 50px 180px 50px 180px;
+  color: #F4F4F4;
+  text-shadow: #333;
+}
+
+.info-viajes {
+  position: relative;
+  background-image: url("../assets/turismo-londres.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2%;
+  min-height: 500px;
+}
+.info-viajes .info-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+.info-viajes .img-bigben {
+  flex: 1 1 300px;
+}
+.info-viajes .img-bigben img {
+  max-width: 100%;
+  height: 480px;
+  display: block;
+  border-radius: 16px;
+}
+.info-viajes .info-texto {
+  flex: 2 1 600px;
+}
+.info-viajes .info-texto h2 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.info-viajes .info-texto p {
+  font-family: "Roboto flex";
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.espacio-entre-secciones {
+  height: 60px;
+}
+
+.clases-online {
+  background-color: rgba(38, 70, 83, 0.08);
+  padding: 60px 20px;
+  width: 70vw;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.clases-online .contenido-clases {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.clases-online .img-clases {
+  flex: 1 1 400px;
+}
+.clases-online .img-clases img {
+  width: 70%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.clases-online .texto-clases {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.clases-online .texto-clases .titulo-icono {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.clases-online .texto-clases .titulo-icono h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #264653;
+}
+.clases-online .texto-clases .titulo-icono img {
+  width: 32px;
+  height: 32px;
+}
+.clases-online .texto-clases .resaltado {
+  font-family: "Roboto flex";
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #264653;
+}
+.clases-online .texto-clases p {
+  font-family: "Roboto flex";
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: left;
+}
+.clases-online .texto-clases .boton-conoce-mas {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 90px;
+  gap: 10px;
+  background-color: #264653;
   color: white;
+  padding: 20px 20px;
+  border-radius: 8px;
+  padding-left: 25%;
+  margin-top: 20px;
+  margin-left: 5%;
+  transform: translateX(50%);
+  width: 556px;
+}
+.clases-online .texto-clases .boton-conoce-mas a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto flex";
+  font-weight: 100;
+  text-align: center;
+}
+.clases-online .texto-clases .boton-conoce-mas img {
+  width: 20px;
+  height: 20px;
+}
+
+.titulo-icono {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.titulo-icono h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #264653;
+  margin: 0;
+}
+.titulo-icono img {
+  width: 32px;
+  height: 32px;
+}
+
+.viajes-uk {
+  background-color: rgba(38, 70, 83, 0.08);
+  padding: 60px 20px;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: 0;
+}
+.viajes-uk .contenido-viajes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.viajes-uk .texto-viajes {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.viajes-uk .texto-viajes .titulo-icono {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.viajes-uk .texto-viajes .titulo-icono h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #264653;
+}
+.viajes-uk .texto-viajes .titulo-icono img {
+  width: 32px;
+  height: 32px;
+}
+.viajes-uk .texto-viajes .resaltado {
+  font-family: "Roboto flex";
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #264653;
+}
+.viajes-uk .texto-viajes p {
+  font-family: "Roboto flex";
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+.viajes-uk .texto-viajes .boton-viaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #264653;
+  color: white;
+  padding: 0 40px;
+  height: 90px;
+  border-radius: 8px;
+  width: 930px;
+  max-width: 100%;
+  margin: 30px auto 0 auto;
+  position: relative;
+  right: 200px;
+}
+.viajes-uk .texto-viajes .boton-viaje a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto flex";
+  font-weight: 100;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.viajes-uk .texto-viajes .boton-viaje img {
+  width: 30px;
+  height: 30px;
+}
+.viajes-uk .img-viajes {
+  flex: 0 0 auto;
+}
+.viajes-uk .img-viajes img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+}
+
+.asesorias {
+  background-color: rgba(38, 70, 83, 0.08);
+  padding: 60px 20px;
+  width: 70vw;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.asesorias .contenido-asesorias {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.asesorias .img-asesorias {
+  flex: 1 1 400px;
+}
+.asesorias .img-asesorias img {
+  width: 60%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.asesorias .texto-asesorias {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.asesorias .texto-asesorias .titulo-icono-asesorias {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.asesorias .texto-asesorias .titulo-icono-asesorias h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  color: #264653;
+}
+.asesorias .texto-asesorias .titulo-icono-asesorias img {
+  width: 32px;
+  height: 32px;
+}
+.asesorias .texto-asesorias .resaltado {
+  font-family: "Roboto flex";
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #264653;
+}
+.asesorias .texto-asesorias p {
+  font-family: "Roboto flex";
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: left;
+  padding-right: 10px;
+}
+.asesorias .texto-asesorias .boton-asesorias {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 90px;
+  gap: 10px;
+  background-color: #264653;
+  color: white;
+  padding: 20px 20px;
+  border-radius: 8px;
+  padding-left: 25%;
+  margin-top: 20px;
+  margin-left: 5%;
+  transform: translateX(50%);
+  width: 556px;
+}
+.asesorias .texto-asesorias .boton-asesorias a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto flex";
+  font-weight: 100;
+  text-align: center;
+}
+.asesorias .texto-asesorias .boton-asesorias img {
+  width: 20px;
+  height: 20px;
 }
 
 /* BOTON DE WHATSAPP*/
@@ -462,6 +831,69 @@ footer .redes .iconos .icono-redes {
   height: 50px;
   display: block;
   object-fit: cover;
+}
+
+.sobre-mi {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+.sobre-mi .img-silvia {
+  flex: 0 0 auto;
+}
+.sobre-mi .img-silvia img {
+  height: 580px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+.sobre-mi .texto-sobre-mi {
+  flex: 1 1 500px;
+  align-content: flex-start;
+  text-align: left !important;
+}
+.sobre-mi .texto-sobre-mi h2 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  margin-bottom: 15px;
+  font-size: 32px;
+  text-align: left !important;
+}
+.sobre-mi .texto-sobre-mi p {
+  font-family: "Roboto flex";
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: left !important;
+}
+.sobre-mi h3 {
+  font-family: "Playfair Display", serif;
+  color: #264653;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: left !important;
+}
+.sobre-mi .resaltado {
+  font-weight: bold;
+  font-family: "Roboto flex";
+}
+
+.lista-servicios {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: "Roboto flex";
+  font-size: 16px;
+  color: #333;
+}
+.lista-servicios li {
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
 /*# sourceMappingURL=stylesass.css.map */
