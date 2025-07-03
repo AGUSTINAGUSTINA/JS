@@ -60,7 +60,8 @@
                                 <a class="nav-link custom_links" href="pages/servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item custom_links">
-                                <a class="nav-link-boton-turnos nav_turnos" href="https://calendly.com/silviajardon-sm/30min?month=2025-07" target="_blank"
+                                <a class="nav-link-boton-turnos nav_turnos"
+                                    href="https://calendly.com/silviajardon-sm/30min?month=2025-07" target="_blank"
                                     rel="noopener noreferrer"> Agendá tu turno</a>
                             </li>
                         </ul>
@@ -72,7 +73,8 @@
     <main>
 
         <h1>Viajes educativos - culturales al Reino Unido</h1>
-        <p>Te invito a vivir una experiencia única: aprender inglés en su lugar de origen, rodearte de su cultura,
+        <p class="p-viajes">Te invito a vivir una experiencia única: aprender inglés en su lugar de origen, rodearte de
+            su cultura,
             historia e interactuar con personas que lo hablan a diario. Estos viajes combinan aprendizaje, inmersión y
             disfrute, para que pongas en práctica lo que sabés y sigas creciendo desde lo vivencial</p>
         <section class="fondo-londres"></section>
@@ -110,6 +112,98 @@
                         típicas y talleres culturales.
                         Todo está diseñado para que vivas el inglés, no solo lo estudies.</p>
                 </div>
+        </section>
+
+        <section class="galeria-viajes container py-5">
+            <h2>Galería de viajes</h2>
+            <div class="row g-4">
+
+                <!-- Imagen 1 -->
+                <div class="col-md-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="0">
+                        <img src="../assets/viaje1.jpg" class="img-fluid rounded shadow-sm" alt="Viaje 1">
+                    </a>
+                </div>
+
+              <!-- Imagen 2 + Video -->
+    <div class="col-md-4">
+      <!-- Imagen -->
+      <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="1">
+        <img src="../assets/viaje2.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 2">
+      </a>
+
+      <!-- Video thumbnail -->
+      <div class="video-thumbnail-wrapper mt-3">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="3">
+          <img src="../assets/thumb-video.png" class="img-fluid rounded shadow-sm h-img-galeria" alt="Video del viaje">
+        </a>
+      </div>
+    </div>
+
+
+                <!-- Imagen 3 -->
+                <div class="col-md-4">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="1">
+                        <img src="../assets/viaje3.jpg" class="img-fluid rounded shadow-sm" alt="Viaje 2">
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Modal con Carrusel -->
+        <div class="modal fade" id="galeriaModal" tabindex="-1" aria-labelledby="galeriaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="galeriaCarrusel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active">
+                                    <img src="../assets/viaje1.jpg" class="d-block w-100" alt="Viaje 1">
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="carousel-item">
+                                    <img src="../assets/viaje2.jpg" class="d-block w-100" alt="Viaje 2">
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item">
+                                    <img src="../assets/viaje3.jpg" class="d-block w-100" alt="Viaje 2">
+                                </div>
+
+                                <!-- Slide 4 (Video) -->
+                                <div class="carousel-item">
+                                    <div class="ratio ratio-16x9">
+                                        <iframe src="../assets/video-viaje.mp4" title="Video del viaje"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Controles -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#galeriaCarrusel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#galeriaCarrusel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </section>
     </main>
     <!-- Botón de WhatsApp -->
