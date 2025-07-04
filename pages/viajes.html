@@ -227,6 +227,58 @@
             </div>
         </div>
 
+        <!-- SECCION DE FOTOS GRUPALES -->
+        <section class="fotos-grupales container py-5">
+            <h2 class="text-center mb-4">Fotos grupales</h2>
+
+            <div id="carruselGrupal" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carruselGrupal" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Grupo 1"></button>
+                    <button type="button" data-bs-target="#carruselGrupal" data-bs-slide-to="1"
+                        aria-label="Grupo 2"></button>
+                    <button type="button" data-bs-target="#carruselGrupal" data-bs-slide-to="2"
+                        aria-label="Grupo 3"></button>
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner rounded shadow overflow-hidden">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active position-relative">
+                        <img src="../assets/grupal1.png" class="d-block w-100 img-carrusel-grupal" alt="Foto grupal 1">
+                        <div class="grupo-etiqueta">Grupo 1 · Año 2017</div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item position-relative">
+                        <img src="../assets/grupal2.png" class="d-block w-100 img-carrusel-grupal" alt="Foto grupal 2">
+                        <div class="grupo-etiqueta">Grupo 2 · Año 2019</div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item position-relative">
+                        <img src="../assets/grupal3.png" class="d-block w-100 img-carrusel-grupal" alt="Foto grupal 3">
+                        <div class="grupo-etiqueta">Grupo 3 · Año 2023</div>
+                    </div>
+                </div>
+
+                <!-- Flechas -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carruselGrupal"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carruselGrupal"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+
     </main>
     <!-- Botón de WhatsApp -->
     <a href="https://wa.me/+5493804612222" class="floating-whatsapp">
