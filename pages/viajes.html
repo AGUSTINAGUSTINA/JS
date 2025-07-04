@@ -114,43 +114,50 @@
                 </div>
         </section>
 
+
+
+        <!-- Galería de viajes -->
         <section class="galeria-viajes container py-5">
-            <h2>Galería de viajes</h2>
-            <div class="row g-4">
+            <h2 class="text-center mb-5">Galería de viajes</h2>
+            <div class="row justify-content-center g-4">
 
-                <!-- Imagen 1 -->
-                <div class="col-md-4">
+                <!-- Columna 1: Imagen 1 + Imagen 4 -->
+                <div class="col-md-4 d-flex flex-column gap-3">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="0">
-                        <img src="../assets/viaje1.jpg" class="img-fluid rounded shadow-sm" alt="Viaje 1">
+                        <img src="../assets/viaje1.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 1">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="3">
+                        <img src="../assets/viaje4.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 4">
                     </a>
                 </div>
 
-              <!-- Imagen 2 + Video -->
-    <div class="col-md-4">
-      <!-- Imagen -->
-      <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="1">
-        <img src="../assets/viaje2.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 2">
-      </a>
-
-      <!-- Video thumbnail -->
-      <div class="video-thumbnail-wrapper mt-3">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="3">
-          <img src="../assets/thumb-video.png" class="img-fluid rounded shadow-sm h-img-galeria" alt="Video del viaje">
-        </a>
-      </div>
-    </div>
-
-
-                <!-- Imagen 3 -->
-                <div class="col-md-4">
+                <!-- Columna 2: Imagen 2 + Video -->
+                <div class="col-md-4 d-flex flex-column gap-3">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="1">
-                        <img src="../assets/viaje3.jpg" class="img-fluid rounded shadow-sm" alt="Viaje 2">
+                        <img src="../assets/viaje2.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 2">
                     </a>
+                    <div class="video-thumbnail-wrapper">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="5">
+                            <img src="../assets/thumb-video.png" class="img-fluid rounded shadow-sm h-img-galeria"
+                                alt="Video del viaje">
+                        </a>
+                    </div>
                 </div>
 
+                <!-- Columna 3: Imagen 3 + Imagen 5 -->
+                <div class="col-md-4 d-flex flex-column gap-3">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="2">
+                        <img src="../assets/viaje3.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 3">
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#galeriaModal" data-bs-slide-to="4">
+                        <img src="../assets/viaje5.jpg" class="img-fluid rounded shadow-sm h-img-galeria" alt="Viaje 5">
+                    </a>
+                </div>
 
             </div>
         </section>
+
+
 
         <!-- Modal con Carrusel -->
         <div class="modal fade" id="galeriaModal" tabindex="-1" aria-labelledby="galeriaModalLabel" aria-hidden="true">
@@ -166,24 +173,40 @@
 
                                 <!-- Slide 1 -->
                                 <div class="carousel-item active">
-                                    <img src="../assets/viaje1.jpg" class="d-block w-100" alt="Viaje 1">
+                                    <img src="../assets/viaje1.jpg" class="d-block mx-auto galeria-slide-img"
+                                        alt="Viaje 1">
                                 </div>
 
                                 <!-- Slide 2 -->
                                 <div class="carousel-item">
-                                    <img src="../assets/viaje2.jpg" class="d-block w-100" alt="Viaje 2">
+                                    <img src="../assets/viaje2.jpg" class="d-block mx-auto galeria-slide-img"
+                                        alt="Viaje 2">
                                 </div>
 
                                 <!-- Slide 3 -->
                                 <div class="carousel-item">
-                                    <img src="../assets/viaje3.jpg" class="d-block w-100" alt="Viaje 2">
+                                    <img src="../assets/viaje3.jpg" class="d-block mx-auto galeria-slide-img"
+                                        alt="Viaje 3">
                                 </div>
 
-                                <!-- Slide 4 (Video) -->
+                                <!-- Slide 4 -->
+                                <div class="carousel-item">
+                                    <img src="../assets/viaje4.jpg" class="d-block mx-auto galeria-slide-img"
+                                        alt="Viaje 4">
+                                </div>
+
+                                <!-- Slide 5 -->
+                                <div class="carousel-item">
+                                    <img src="../assets/viaje5.jpg" class="d-block mx-auto galeria-slide-img"
+                                        alt="Viaje 3">
+                                </div>
+
+                                <!-- Slide 6 (Video) -->
                                 <div class="carousel-item">
                                     <div class="ratio ratio-16x9">
-                                        <iframe src="../assets/video-viaje.mp4" title="Video del viaje"
-                                            allowfullscreen></iframe>
+                                        <video class="d-block w-100" controls>
+                                            <source src="../assets/video-viaje.mp4" type="video/mp4">
+                                        </video>
                                     </div>
                                 </div>
 
@@ -204,7 +227,6 @@
             </div>
         </div>
 
-        </section>
     </main>
     <!-- Botón de WhatsApp -->
     <a href="https://wa.me/+5493804612222" class="floating-whatsapp">
@@ -218,39 +240,54 @@
     </script>
     <!-- Bootstrap JS vía CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <footer>
-        <section>
-            <div>
-                <img src="../assets/logo-blanco.png" alt="Logo de JS">
-            </div>
+    <!-- JAVA SCRIPT -->
+    <script>
+        const galeriaModal = document.getElementById('galeriaModal');
+        galeriaModal.addEventListener('show.bs.modal', function (event) {
+            const trigger = event.relatedTarget;
+            const slideTo = trigger.getAttribute('data-bs-slide-to');
+            const carousel = galeriaModal.querySelector('.carousel');
+            if (slideTo) {
+                const bsCarousel = bootstrap.Carousel.getInstance(carousel) || new bootstrap.Carousel(carousel);
+                bsCarousel.to(parseInt(slideTo));
+            }
+        });
+    </script>
 
-            <div>
-                <h3 class="footer_contacto">Servicios</h3>
-                <p>Asesorías Institucionales</p>
-                <p>Clases online</p>
-                <p>Viajes educativos y recreativos</p>
-            </div>
+</body>
+<footer>
+    <section>
+        <div>
+            <img src="../assets/logo-blanco.png" alt="Logo de JS">
+        </div>
 
-            <div>
-                <h3 class="footer_contacto">Contacto</h3>
-                <p>Mail: silviajardon.sm@gmail.com</p>
-                <p>Teléfono: +5493804612222</p>
-            </div>
+        <div>
+            <h3 class="footer_contacto">Servicios</h3>
+            <p>Asesorías Institucionales</p>
+            <p>Clases online</p>
+            <p>Viajes educativos y recreativos</p>
+        </div>
 
-            <div class="redes">
-                <h3 class="footer">Redes Sociales</h3>
-                <div class="iconos">
-                    <img src="../assets/svg-linkedin.png" alt="Ir al perfil de LinkedIn de JS" title="LinkedIn"
-                        class="icono-redes">
-                    <img src="../assets/svg-instagram.png" alt="Ir al perfil de Instagram de JS" title="Instagram"
-                        class="icono-redes">
-                    <img src="../assets/svg-mail.png" alt="Enviar un mail a JS" title="Email" class="icono-redes">
-                </div>
+        <div>
+            <h3 class="footer_contacto">Contacto</h3>
+            <p>Mail: silviajardon.sm@gmail.com</p>
+            <p>Teléfono: +5493804612222</p>
+        </div>
+
+        <div class="redes">
+            <h3 class="footer">Redes Sociales</h3>
+            <div class="iconos">
+                <img src="../assets/svg-linkedin.png" alt="Ir al perfil de LinkedIn de JS" title="LinkedIn"
+                    class="icono-redes">
+                <img src="../assets/svg-instagram.png" alt="Ir al perfil de Instagram de JS" title="Instagram"
+                    class="icono-redes">
+                <img src="../assets/svg-mail.png" alt="Enviar un mail a JS" title="Email" class="icono-redes">
             </div>
-        </section>
-        <hr>
-        <p class="footer_derechos_reservados">© 2000 JS - Todos los Derechos Reservados</p>
-    </footer>
+        </div>
+    </section>
+    <hr>
+    <p class="footer_derechos_reservados">© 2000 JS - Todos los Derechos Reservados</p>
+</footer>
 
 </body>
 

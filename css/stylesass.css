@@ -542,19 +542,29 @@ h2.testimonio {
   padding: 2%;
   min-height: 500px;
 }
-.info-viajes .galeria-viajes img {
+
+.galeria-viajes {
+  text-align: center;
+}
+.galeria-viajes .row {
+  justify-content: center;
+}
+.galeria-viajes img {
   transition: transform 0.3s ease;
   cursor: zoom-in;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
 }
-.info-viajes .galeria-viajes img:hover {
+.galeria-viajes img:hover {
   transform: scale(1.05);
 }
-.info-viajes .video-thumbnail-wrapper {
+.galeria-viajes .video-thumbnail-wrapper {
   position: relative;
-  display: inline-block;
+  display: block;
   cursor: pointer;
 }
-.info-viajes .video-thumbnail-wrapper::after {
+.galeria-viajes .video-thumbnail-wrapper::after {
   content: "▶";
   font-size: 40px;
   color: white;
@@ -563,10 +573,21 @@ h2.testimonio {
   left: 50%;
   transform: translate(-50%, -50%);
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  pointer-events: none;
 }
-.info-viajes .h-img-galeria {
-  height: 250px;
-  object-fit: cover;
+.galeria-viajes .video-thumbnail-wrapper img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.galeria-slide-img {
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 .espacio-entre-secciones {

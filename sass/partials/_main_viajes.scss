@@ -50,45 +50,64 @@
     }
     
   }
-
-.info-viajes {
+ .info-viajes {
   position: relative;
   background-image: url('../assets/turismo-londres.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 2%;
-  min-height: 500px; // o lo que quieras para que se note el fondo
-.galeria-viajes img {
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
+  min-height: 500px; 
+}
+.galeria-viajes {
+  text-align: center;
+
+  .row {
+    justify-content: center;
+  }
+
+  img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  .video-thumbnail-wrapper {
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+    &::after {
+      content: "▶";
+      font-size: 40px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
 }
 
-.galeria-viajes img:hover {
-  transform: scale(1.05);
-}
-
-
-.video-thumbnail-wrapper {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-
-.video-thumbnail-wrapper::after {
-  content: "▶";
-  font-size: 40px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 10px rgba(0,0,0,0.7);
-}
-
-
-.h-img-galeria {
-  height: 250px;
-  object-fit: cover;
-}
+.galeria-slide-img {
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
 }
