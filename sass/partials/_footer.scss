@@ -25,23 +25,44 @@ footer {
       margin: 20px;
       flex-direction: column;
       align-items: center;
- 
-        img {
-          max-width: 150px;
-          height: 40%;
-          width: 40%;
-          align-items: center;
-        }
+
+      img {
+        max-width: 150px;
+        height: 40%;
+        width: 40%;
+        align-items: center;
       }
-      h3 {
-        text-align: left;
-        font-family: $h;
-        font-weight: normal;
-        font-size: 24px;
-        color: white;
-      }
-    
+    }
+
+    h3 {
+      text-align: left;
+      font-family: $h;
+      font-weight: normal;
+      font-size: 24px;
+      color: white;
+    }
+
   }
+
+.a-footer {
+  text-align: left;
+  margin-top: 8px;
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 0;
+  font-family: $p;
+  font-weight: $thin;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: $semibold;
+  }
+}
+
+  }
+
   p {
     text-align: left;
     margin-top: 8px;
@@ -52,7 +73,7 @@ footer {
     font-family: $p;
     font-weight: $thin;
 
-  
+
     &.footer_derechos_reservados {
       text-align: left;
       margin-top: 8px;
@@ -63,7 +84,7 @@ footer {
     }
   }
 
-//REDES
+  //REDES
   .redes {
     display: flex;
     flex-direction: column;
@@ -77,7 +98,7 @@ footer {
       gap: 10px;
       justify-content: center;
       cursor: pointer;
-     margin: 8px;
+      margin: 8px;
 
       .icono-redes {
         width: 32px;
@@ -85,4 +106,3 @@ footer {
       }
     }
   }
-}

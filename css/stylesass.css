@@ -238,7 +238,23 @@ footer section h3 {
   font-size: 24px;
   color: white;
 }
-footer p {
+footer .a-footer {
+  text-align: left;
+  margin-top: 8px;
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 0;
+  font-family: "Roboto flex";
+  font-weight: 100;
+  text-decoration: none;
+  cursor: pointer;
+}
+footer .a-footer:hover {
+  font-weight: 600;
+}
+
+p {
   text-align: left;
   margin-top: 8px;
   font-size: 16px;
@@ -248,7 +264,7 @@ footer p {
   font-family: "Roboto flex";
   font-weight: 100;
 }
-footer p.footer_derechos_reservados {
+p.footer_derechos_reservados {
   text-align: left;
   margin-top: 8px;
   font-size: 1rem;
@@ -256,14 +272,15 @@ footer p.footer_derechos_reservados {
   margin-bottom: 0;
   flex-basis: 100%;
 }
-footer .redes {
+
+.redes {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 10px;
 }
-footer .redes .iconos {
+.redes .iconos {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -271,7 +288,7 @@ footer .redes .iconos {
   cursor: pointer;
   margin: 8px;
 }
-footer .redes .iconos .icono-redes {
+.redes .iconos .icono-redes {
   width: 32px;
   gap: 10px;
 }
@@ -282,6 +299,7 @@ footer .redes .iconos .icono-redes {
   font-size: 48px;
   background-color: #F4F4F4;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .p-bienvenida {
@@ -290,8 +308,10 @@ footer .redes .iconos .icono-redes {
   font-size: 18px;
   background-color: #F4F4F4;
   text-align: center;
-  padding-right: 2%;
-  padding-left: 2%;
+  padding-right: 3%;
+  padding-left: 3%;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .carousel-caption-custom {
@@ -983,18 +1003,21 @@ h2.testimonio {
   padding-left: 20px;
   font-family: "Roboto flex";
   font-size: 16px;
-  color: #333;
+  color: black;
 }
 .lista-servicios li {
   margin-bottom: 12px;
   line-height: 1.6;
+  color: black;
 }
 .lista-servicios li .servicios {
   text-align: start;
+  color: black;
 }
 
 .service {
   width: 100%;
+  margin-bottom: 1ps;
 }
 
 .servicios2 {
