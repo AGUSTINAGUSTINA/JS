@@ -138,7 +138,7 @@ a.nav_turnos:hover {
   color: $primario;
   text-decoration: none;
   padding: 8px 20px;
-  border-color: 2px solid $primario;
+  border-color: 2px solid $primario !important;
   align-items: center;
   justify-content: center;
 
