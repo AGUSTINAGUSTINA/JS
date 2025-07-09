@@ -90,7 +90,7 @@ de navegacion en mobile*/
 .custom_collapse.show {
   z-index: 1050;
   width: 100%;
-  background-color: white;
+  background-color: transparent;
   position: relative;
   border: none;
   box-shadow: none;
@@ -100,16 +100,17 @@ de navegacion en mobile*/
   justify-content: center;
 }
 .custom_collapse .nav_turnos {
-  background-color: #264653;
+  background-color: #CDD3D6;
   font-family: "Roboto flex";
   width: 230px;
   height: 40px;
   padding: 8px 20px;
   border-radius: 19px;
-  color: white;
+  color: #264653;
   text-decoration: none;
   justify-self: center;
   align-items: center;
+  border-color: solid #264653;
 }
 
 .container_custom_navbar {
@@ -154,20 +155,11 @@ de navegacion en mobile*/
   text-decoration-thickness: 1.5px;
 }
 
-.nav_turnos {
-  background-color: #264653;
-  font-family: "Roboto flex";
-  font-size: 16px;
-  border-radius: 19px;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: 8px 20px;
-  border-color: #264653;
-  align-items: center;
-  justify-content: center;
+a.nav_turnos:hover {
+  text-decoration: none !important;
 }
-.nav_turnos:hover {
+
+.nav_turnos {
   background-color: #CDD3D6;
   font-family: "Roboto flex";
   font-size: 16px;
@@ -175,7 +167,21 @@ de navegacion en mobile*/
   font-weight: 700;
   color: #264653;
   text-decoration: none;
+  padding: 8px 20px;
+  border-color: 2px solid #264653;
+  align-items: center;
+  justify-content: center;
+}
+.nav_turnos:hover {
+  background-color: #264653;
+  font-family: "Roboto flex";
+  font-size: 16px;
+  border-radius: 19px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
   border-color: solid #264653;
+  text-decoration: none;
 }
 
 .menu_icon {
@@ -983,6 +989,22 @@ h2.testimonio {
   margin-bottom: 12px;
   line-height: 1.6;
 }
+.lista-servicios li .servicios {
+  text-align: start;
+}
+
+.service {
+  width: 100%;
+}
+
+.servicios2 {
+  text-align: start !important;
+  font-family: "Roboto flex";
+  font-size: 18px;
+  color: black;
+  margin-bottom: 5px;
+  width: 100%;
+}
 
 .asesoria-educativa {
   background-color: #f9f9f9;
@@ -1022,6 +1044,61 @@ h2.testimonio {
   color: #593058;
   margin-top: 20px;
   text-align: start;
+}
+
+.clases-online-full {
+  background-color: transparent;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+.clases-online-full h2 {
+  color: #264653 !important;
+  font-weight: 600;
+  text-align: start;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+}
+.clases-online-full .lead {
+  font-size: 18px;
+  color: black;
+  font-family: "Roboto flex";
+  text-align: start;
+}
+.clases-online-full ul li {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  padding-left: 0;
+  color: black;
+}
+.clases-online-full .botones_container {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  margin-left: 350px;
+}
+.clases-online-full .botones_container a#contactar {
+  background-color: #264653;
+  color: white;
+  font-family: "Roboto flex";
+  font-weight: bold;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.clases-online-full .botones_container a#contactar:hover {
+  background-color: #CDD3D6;
+  color: #264653;
+  border: 2px solid #264653;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=stylesass.css.map */

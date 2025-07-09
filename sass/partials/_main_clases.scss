@@ -1,0 +1,64 @@
+@use 'variables' as *;
+
+.clases-online-full {
+  background-color: transparent;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+
+  h2 {
+    color: $primario !important;
+    font-weight: $semibold;
+    text-align: start;
+    font-family: $h;
+    font-size: 32px; // lo dejé igual a vos
+  }
+
+  .lead {
+    font-size: 18px;
+    color: black;
+    font-family: $p;
+    text-align: start;
+  }
+
+  ul li {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    padding-left: 0;
+    color: black;
+  }
+
+  .botones_container {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+  margin-left: 350px;
+
+  a#contactar {
+    background-color: $primario;
+    color: white;
+    font-family: $p;
+    font-weight: bold;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px; // bien redondeado
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $bg2;
+      color: $primario;
+      border: 2px solid $primario;
+    }
+  }
+}
+
+
+}
+
+img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
