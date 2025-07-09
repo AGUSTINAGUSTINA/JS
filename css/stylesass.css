@@ -984,4 +984,44 @@ h2.testimonio {
   line-height: 1.6;
 }
 
+.asesoria-educativa {
+  background-color: #f9f9f9;
+}
+.asesoria-educativa h2 {
+  color: #264653;
+  font-weight: 600;
+  text-align: start;
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+}
+.asesoria-educativa .lead {
+  font-size: 18px;
+  color: black;
+  font-family: "Roboto flex";
+  text-align: start;
+}
+.asesoria-educativa .list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #444;
+}
+.asesoria-educativa img {
+  max-width: 100%;
+  height: 75vh;
+  border-radius: 10px;
+  align-self: flex-end;
+}
+.asesoria-educativa .fw-bold {
+  font-size: 1.1rem;
+}
+.asesoria-educativa .frase-asesoria {
+  font-family: "Roboto flex";
+  font-size: 18px;
+  font-weight: 700;
+  color: #593058;
+  margin-top: 20px;
+  text-align: start;
+}
+
 /*# sourceMappingURL=stylesass.css.map */
