@@ -7,7 +7,7 @@ footer {
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   position: relative;
 
@@ -17,19 +17,20 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 10px;
+    padding: 10px;
 
     // DIVISIONES DENTRO DE LA SECCIÓN
     div {
       flex: 1 50%;
-      margin: 20px;
+      margin: 10px;
       flex-direction: column;
       align-items: center;
 
       img {
         max-width: 150px;
-        height: 40%;
-        width: 40%;
+        height: 30%;
+        width: 30%;
         align-items: center;
       }
     }
@@ -76,7 +77,7 @@ footer {
 
     &.footer_derechos_reservados {
       text-align: left;
-      margin-top: 8px;
+      margin-top: 2px;
       font-size: 1rem;
       color: white;
       margin-bottom: 0;

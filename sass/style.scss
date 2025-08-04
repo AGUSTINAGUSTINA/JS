@@ -1,4 +1,6 @@
 @use 'partials/variables' as *;
+@use 'partials/_mixins' ;
+@use 'partials/extend' ;
 @use 'partials/reset';
 @use 'partials/tipografia';
 @use 'partials/header' ;

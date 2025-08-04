@@ -208,7 +208,7 @@ footer {
   text-align: left;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
   position: relative;
 }
@@ -217,18 +217,19 @@ footer section {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 10px;
+  padding: 10px;
 }
 footer section div {
   flex: 1 50%;
-  margin: 20px;
+  margin: 10px;
   flex-direction: column;
   align-items: center;
 }
 footer section div img {
   max-width: 150px;
-  height: 40%;
-  width: 40%;
+  height: 30%;
+  width: 30%;
   align-items: center;
 }
 footer section h3 {
@@ -266,7 +267,7 @@ p {
 }
 p.footer_derechos_reservados {
   text-align: left;
-  margin-top: 8px;
+  margin-top: 2px;
   font-size: 1rem;
   color: white;
   margin-bottom: 0;
@@ -940,6 +941,7 @@ h2.testimonio {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   display: inline-block;
+  background-color: transparent;
 }
 .floating-whatsapp img {
   border-radius: 50%;
@@ -1146,6 +1148,568 @@ img {
   height: 100%;
   width: auto;
   object-fit: cover;
+}
+
+@media (max-width: 575px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+/*-------------HEADER-------------------*/
+@media (max-width: 575px) {
+  .logo_container {
+    width: 55px;
+    height: 55px;
+  }
+  .span-brand {
+    font-size: 0.8rem;
+  }
+  .custom-navbar {
+    padding: 10px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .custom-navbar .links_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .custom-navbar .custom_toggler {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .custom-navbar .custom_toggler .menu_icon {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }
+  .custom-navbar .collapse {
+    transition: none !important;
+  }
+  .custom-navbar .custom_collapse {
+    width: 100%;
+  }
+  .custom-navbar .custom_collapse .navbar-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .custom-navbar .custom_collapse .navbar-content ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .custom-navbar .custom_collapse .navbar-content ul li {
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+  .custom-navbar .custom_collapse .navbar-content ul li .nav-link,
+  .custom-navbar .custom_collapse .navbar-content ul li .nav-link-boton-turnos {
+    display: block;
+    width: 100%;
+  }
+  .custom-navbar .custom_collapse.show {
+    margin-top: 10px;
+  }
+}
+/*------------FOOTER--------------*/
+@media (max-width: 575px) {
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  footer section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  footer section div {
+    margin: 10px 0;
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+  }
+  footer section div img {
+    width: 70px;
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  footer section h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  footer .a-footer {
+    font-size: 14px;
+    text-align: center;
+    margin: 6px 0;
+  }
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }
+  footer p.footer_derechos_reservados {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer .redes {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  footer .redes .iconos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .redes .iconos .icono-redes {
+    width: 28px;
+  }
+}
+/*--------------INDEX------------------*/
+@media (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .p-bienvenida {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  .carousel-item img {
+    height: 185px;
+  }
+  .carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .carousel-caption-custom h2 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .carousel-caption-custom p {
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .carousel-caption-custom .botones_container a#consulta {
+    font-size: 12px;
+    padding: 8px 16px;
+    width: auto;
+    font-weight: 700;
+    color: #264653;
+    background: #CDD3D6;
+  }
+  .frase {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .mvv-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  .card-mvv {
+    width: 90%;
+    height: auto;
+    max-width: none;
+    padding: 60px 20px 20px;
+    flex: 1 1 auto;
+    margin-top: 60px;
+  }
+  .card-mvv .icon-container {
+    top: -32px;
+  }
+  .card-mvv .icon-container img {
+    width: 48px;
+    height: 48px;
+  }
+  .card-mvv .card-content {
+    margin-top: 20px;
+  }
+  .card-mvv .card-content .card-title {
+    font-size: 16px;
+  }
+  .card-mvv .card-content p.p-card {
+    font-size: 16px;
+  }
+}
+/*-------------SOBRE MI------------------*/
+@media (max-width: 575px) {
+  .sobre-mi {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  .sobre-mi .img-silvia {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .sobre-mi .img-silvia img {
+    width: 100%;
+    height: auto;
+  }
+  .sobre-mi .texto-sobre-mi {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .sobre-mi .texto-sobre-mi h2 {
+    font-size: 20px;
+  }
+  .sobre-mi .texto-sobre-mi p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  section {
+    padding: 3rem 1rem;
+    overflow-x: hidden;
+  }
+  .espacio-entre-secciones {
+    height: 2px;
+    padding: 5px !important;
+  }
+}
+@media (max-width: 575px) {
+  .clases-online,
+  .viajes-uk,
+  .asesorias {
+    background-color: rgba(38, 70, 83, 0.08);
+    padding: 60px 20px;
+    width: 50vw;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px 10px;
+    width: 90vw;
+    max-width: 400px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .clases-online .contenido-clases,
+  .clases-online .contenido-viajes,
+  .clases-online .contenido-asesorias,
+  .viajes-uk .contenido-clases,
+  .viajes-uk .contenido-viajes,
+  .viajes-uk .contenido-asesorias,
+  .asesorias .contenido-clases,
+  .asesorias .contenido-viajes,
+  .asesorias .contenido-asesorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: relative;
+  }
+  .clases-online .img-clases,
+  .clases-online .img-viajes,
+  .clases-online .img-asesorias,
+  .viajes-uk .img-clases,
+  .viajes-uk .img-viajes,
+  .viajes-uk .img-asesorias,
+  .asesorias .img-clases,
+  .asesorias .img-viajes,
+  .asesorias .img-asesorias {
+    order: -1;
+    width: 100%;
+    max-height: 135px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .clases-online .img-clases img,
+  .clases-online .img-viajes img,
+  .clases-online .img-asesorias img,
+  .viajes-uk .img-clases img,
+  .viajes-uk .img-viajes img,
+  .viajes-uk .img-asesorias img,
+  .asesorias .img-clases img,
+  .asesorias .img-viajes img,
+  .asesorias .img-asesorias img {
+    width: 130px;
+    height: 130px;
+    max-width: 260px;
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+  }
+  .clases-online .texto-clases,
+  .clases-online .texto-viajes,
+  .clases-online .texto-asesorias,
+  .viajes-uk .texto-clases,
+  .viajes-uk .texto-viajes,
+  .viajes-uk .texto-asesorias,
+  .asesorias .texto-clases,
+  .asesorias .texto-viajes,
+  .asesorias .texto-asesorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    padding: 0;
+    max-height: 270px;
+  }
+  .clases-online .texto-clases .titulo-icono,
+  .clases-online .texto-clases .titulo-icono-asesorias,
+  .clases-online .texto-viajes .titulo-icono,
+  .clases-online .texto-viajes .titulo-icono-asesorias,
+  .clases-online .texto-asesorias .titulo-icono,
+  .clases-online .texto-asesorias .titulo-icono-asesorias,
+  .viajes-uk .texto-clases .titulo-icono,
+  .viajes-uk .texto-clases .titulo-icono-asesorias,
+  .viajes-uk .texto-viajes .titulo-icono,
+  .viajes-uk .texto-viajes .titulo-icono-asesorias,
+  .viajes-uk .texto-asesorias .titulo-icono,
+  .viajes-uk .texto-asesorias .titulo-icono-asesorias,
+  .asesorias .texto-clases .titulo-icono,
+  .asesorias .texto-clases .titulo-icono-asesorias,
+  .asesorias .texto-viajes .titulo-icono,
+  .asesorias .texto-viajes .titulo-icono-asesorias,
+  .asesorias .texto-asesorias .titulo-icono,
+  .asesorias .texto-asesorias .titulo-icono-asesorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .clases-online .texto-clases .titulo-icono h2,
+  .clases-online .texto-clases .titulo-icono-asesorias h2,
+  .clases-online .texto-viajes .titulo-icono h2,
+  .clases-online .texto-viajes .titulo-icono-asesorias h2,
+  .clases-online .texto-asesorias .titulo-icono h2,
+  .clases-online .texto-asesorias .titulo-icono-asesorias h2,
+  .viajes-uk .texto-clases .titulo-icono h2,
+  .viajes-uk .texto-clases .titulo-icono-asesorias h2,
+  .viajes-uk .texto-viajes .titulo-icono h2,
+  .viajes-uk .texto-viajes .titulo-icono-asesorias h2,
+  .viajes-uk .texto-asesorias .titulo-icono h2,
+  .viajes-uk .texto-asesorias .titulo-icono-asesorias h2,
+  .asesorias .texto-clases .titulo-icono h2,
+  .asesorias .texto-clases .titulo-icono-asesorias h2,
+  .asesorias .texto-viajes .titulo-icono h2,
+  .asesorias .texto-viajes .titulo-icono-asesorias h2,
+  .asesorias .texto-asesorias .titulo-icono h2,
+  .asesorias .texto-asesorias .titulo-icono-asesorias h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #264653;
+  }
+  .clases-online .texto-clases .titulo-icono img,
+  .clases-online .texto-clases .titulo-icono-asesorias img,
+  .clases-online .texto-viajes .titulo-icono img,
+  .clases-online .texto-viajes .titulo-icono-asesorias img,
+  .clases-online .texto-asesorias .titulo-icono img,
+  .clases-online .texto-asesorias .titulo-icono-asesorias img,
+  .viajes-uk .texto-clases .titulo-icono img,
+  .viajes-uk .texto-clases .titulo-icono-asesorias img,
+  .viajes-uk .texto-viajes .titulo-icono img,
+  .viajes-uk .texto-viajes .titulo-icono-asesorias img,
+  .viajes-uk .texto-asesorias .titulo-icono img,
+  .viajes-uk .texto-asesorias .titulo-icono-asesorias img,
+  .asesorias .texto-clases .titulo-icono img,
+  .asesorias .texto-clases .titulo-icono-asesorias img,
+  .asesorias .texto-viajes .titulo-icono img,
+  .asesorias .texto-viajes .titulo-icono-asesorias img,
+  .asesorias .texto-asesorias .titulo-icono img,
+  .asesorias .texto-asesorias .titulo-icono-asesorias img {
+    width: 28px;
+    height: 28px;
+  }
+  .clases-online .texto-clases .resaltado,
+  .clases-online .texto-viajes .resaltado,
+  .clases-online .texto-asesorias .resaltado,
+  .viajes-uk .texto-clases .resaltado,
+  .viajes-uk .texto-viajes .resaltado,
+  .viajes-uk .texto-asesorias .resaltado,
+  .asesorias .texto-clases .resaltado,
+  .asesorias .texto-viajes .resaltado,
+  .asesorias .texto-asesorias .resaltado {
+    font-size: 15px;
+    margin: 8px 0;
+    font-weight: 700;
+    color: #264653;
+  }
+  .clases-online .texto-clases p,
+  .clases-online .texto-viajes p,
+  .clases-online .texto-asesorias p,
+  .viajes-uk .texto-clases p,
+  .viajes-uk .texto-viajes p,
+  .viajes-uk .texto-asesorias p,
+  .asesorias .texto-clases p,
+  .asesorias .texto-viajes p,
+  .asesorias .texto-asesorias p {
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .clases-online .texto-clases .boton-conoce-mas,
+  .clases-online .texto-clases .boton-viaje,
+  .clases-online .texto-clases .boton-asesorias,
+  .clases-online .texto-viajes .boton-conoce-mas,
+  .clases-online .texto-viajes .boton-viaje,
+  .clases-online .texto-viajes .boton-asesorias,
+  .clases-online .texto-asesorias .boton-conoce-mas,
+  .clases-online .texto-asesorias .boton-viaje,
+  .clases-online .texto-asesorias .boton-asesorias,
+  .viajes-uk .texto-clases .boton-conoce-mas,
+  .viajes-uk .texto-clases .boton-viaje,
+  .viajes-uk .texto-clases .boton-asesorias,
+  .viajes-uk .texto-viajes .boton-conoce-mas,
+  .viajes-uk .texto-viajes .boton-viaje,
+  .viajes-uk .texto-viajes .boton-asesorias,
+  .viajes-uk .texto-asesorias .boton-conoce-mas,
+  .viajes-uk .texto-asesorias .boton-viaje,
+  .viajes-uk .texto-asesorias .boton-asesorias,
+  .asesorias .texto-clases .boton-conoce-mas,
+  .asesorias .texto-clases .boton-viaje,
+  .asesorias .texto-clases .boton-asesorias,
+  .asesorias .texto-viajes .boton-conoce-mas,
+  .asesorias .texto-viajes .boton-viaje,
+  .asesorias .texto-viajes .boton-asesorias,
+  .asesorias .texto-asesorias .boton-conoce-mas,
+  .asesorias .texto-asesorias .boton-viaje,
+  .asesorias .texto-asesorias .boton-asesorias {
+    width: 280px;
+    max-width: 280px;
+    height: 46px !important;
+    padding: 0 16px;
+    border-radius: 8px;
+    background-color: #264653;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    position: relative !important;
+    transform: none !important;
+    padding: 8px;
+  }
+  .clases-online .texto-clases .boton-conoce-mas a,
+  .clases-online .texto-clases .boton-viaje a,
+  .clases-online .texto-clases .boton-asesorias a,
+  .clases-online .texto-viajes .boton-conoce-mas a,
+  .clases-online .texto-viajes .boton-viaje a,
+  .clases-online .texto-viajes .boton-asesorias a,
+  .clases-online .texto-asesorias .boton-conoce-mas a,
+  .clases-online .texto-asesorias .boton-viaje a,
+  .clases-online .texto-asesorias .boton-asesorias a,
+  .viajes-uk .texto-clases .boton-conoce-mas a,
+  .viajes-uk .texto-clases .boton-viaje a,
+  .viajes-uk .texto-clases .boton-asesorias a,
+  .viajes-uk .texto-viajes .boton-conoce-mas a,
+  .viajes-uk .texto-viajes .boton-viaje a,
+  .viajes-uk .texto-viajes .boton-asesorias a,
+  .viajes-uk .texto-asesorias .boton-conoce-mas a,
+  .viajes-uk .texto-asesorias .boton-viaje a,
+  .viajes-uk .texto-asesorias .boton-asesorias a,
+  .asesorias .texto-clases .boton-conoce-mas a,
+  .asesorias .texto-clases .boton-viaje a,
+  .asesorias .texto-clases .boton-asesorias a,
+  .asesorias .texto-viajes .boton-conoce-mas a,
+  .asesorias .texto-viajes .boton-viaje a,
+  .asesorias .texto-viajes .boton-asesorias a,
+  .asesorias .texto-asesorias .boton-conoce-mas a,
+  .asesorias .texto-asesorias .boton-viaje a,
+  .asesorias .texto-asesorias .boton-asesorias a {
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .clases-online .texto-clases .boton-conoce-mas img,
+  .clases-online .texto-clases .boton-viaje img,
+  .clases-online .texto-clases .boton-asesorias img,
+  .clases-online .texto-viajes .boton-conoce-mas img,
+  .clases-online .texto-viajes .boton-viaje img,
+  .clases-online .texto-viajes .boton-asesorias img,
+  .clases-online .texto-asesorias .boton-conoce-mas img,
+  .clases-online .texto-asesorias .boton-viaje img,
+  .clases-online .texto-asesorias .boton-asesorias img,
+  .viajes-uk .texto-clases .boton-conoce-mas img,
+  .viajes-uk .texto-clases .boton-viaje img,
+  .viajes-uk .texto-clases .boton-asesorias img,
+  .viajes-uk .texto-viajes .boton-conoce-mas img,
+  .viajes-uk .texto-viajes .boton-viaje img,
+  .viajes-uk .texto-viajes .boton-asesorias img,
+  .viajes-uk .texto-asesorias .boton-conoce-mas img,
+  .viajes-uk .texto-asesorias .boton-viaje img,
+  .viajes-uk .texto-asesorias .boton-asesorias img,
+  .asesorias .texto-clases .boton-conoce-mas img,
+  .asesorias .texto-clases .boton-viaje img,
+  .asesorias .texto-clases .boton-asesorias img,
+  .asesorias .texto-viajes .boton-conoce-mas img,
+  .asesorias .texto-viajes .boton-viaje img,
+  .asesorias .texto-viajes .boton-asesorias img,
+  .asesorias .texto-asesorias .boton-conoce-mas img,
+  .asesorias .texto-asesorias .boton-viaje img,
+  .asesorias .texto-asesorias .boton-asesorias img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .boton-viaje {
+    right: auto !important;
+    left: auto !important;
+    margin: 10px auto 0 auto;
+    transform: none !important;
+  }
+}
+/* BOTON DE WHATSAPP*/
+@media (max-width: 575px) {
+  .floating-whatsapp {
+    position: fixed !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    z-index: 999999 !important;
+    border-radius: 50%;
+    display: inline-block !important;
+    background-color: transparent !important;
+    pointer-events: auto;
+  }
+  .floating-whatsapp img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: block;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=stylesass.css.map */

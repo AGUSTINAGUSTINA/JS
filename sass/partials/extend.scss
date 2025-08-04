@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+%card-common {
+  background-color: $card-bg;
+  padding: $card-padding;
+  width: $card-width;
+  max-width: $card-max-width;
+  margin: 30px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  border-radius: $card-radius;
+  box-sizing: border-box;
+  flex-wrap: wrap; // para que sea flexible en pantallas menores
+}
