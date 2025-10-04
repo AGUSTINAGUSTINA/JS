@@ -458,6 +458,92 @@ section {
   }
 }
 
+@include tablet {
+  .clases-online,
+  .viajes-uk,
+  .asesorias {
+    @include card-common;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    width: 95%;
+    max-width: 700px; // un poquito más ancho que mobile
+    margin: 15px auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+
+    .contenido-clases,
+    .contenido-viajes,
+    .contenido-asesorias {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 10px;
+      width: 100%;
+    }
+
+    // Imagen arriba también en tablet
+    .img-clases,
+    .img-viajes,
+    .img-asesorias {
+      order: -1;
+      width: 100%;
+      max-height: 300px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: $card-radius;
+        object-fit: cover;
+      }
+    }
+
+    .texto-clases,
+    .texto-viajes,
+    .texto-asesorias {
+      text-align: center !important;
+      padding: 0;
+      max-width: 560px;
+      margin: 0%;
+
+      .titulo-icono,
+      .titulo-icono-asesorias {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .boton-conoce-mas,
+      .boton-viaje,
+      .boton-asesorias {
+        width: 300px;
+        max-width: 800px;
+        height: 60px !important;
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+      }
+    }
+  }
+}
+
+
 /* BOTON DE WHATSAPP*/
 @include mobile {
 .floating-whatsapp {

@@ -1691,6 +1691,172 @@ img {
     transform: none !important;
   }
 }
+@media (min-width: 576px) and (max-width: 1024px) {
+  .clases-online,
+  .viajes-uk,
+  .asesorias {
+    background-color: rgba(38, 70, 83, 0.08);
+    padding: 60px 20px;
+    width: 50vw;
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px;
+    width: 95%;
+    max-width: 700px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .clases-online .contenido-clases,
+  .clases-online .contenido-viajes,
+  .clases-online .contenido-asesorias,
+  .viajes-uk .contenido-clases,
+  .viajes-uk .contenido-viajes,
+  .viajes-uk .contenido-asesorias,
+  .asesorias .contenido-clases,
+  .asesorias .contenido-viajes,
+  .asesorias .contenido-asesorias {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px;
+    width: 100%;
+  }
+  .clases-online .img-clases,
+  .clases-online .img-viajes,
+  .clases-online .img-asesorias,
+  .viajes-uk .img-clases,
+  .viajes-uk .img-viajes,
+  .viajes-uk .img-asesorias,
+  .asesorias .img-clases,
+  .asesorias .img-viajes,
+  .asesorias .img-asesorias {
+    order: -1;
+    width: 100%;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .clases-online .img-clases img,
+  .clases-online .img-viajes img,
+  .clases-online .img-asesorias img,
+  .viajes-uk .img-clases img,
+  .viajes-uk .img-viajes img,
+  .viajes-uk .img-asesorias img,
+  .asesorias .img-clases img,
+  .asesorias .img-viajes img,
+  .asesorias .img-asesorias img {
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .clases-online .texto-clases,
+  .clases-online .texto-viajes,
+  .clases-online .texto-asesorias,
+  .viajes-uk .texto-clases,
+  .viajes-uk .texto-viajes,
+  .viajes-uk .texto-asesorias,
+  .asesorias .texto-clases,
+  .asesorias .texto-viajes,
+  .asesorias .texto-asesorias {
+    text-align: center !important;
+    padding: 0;
+    max-width: 560px;
+    margin: 0%;
+  }
+  .clases-online .texto-clases .titulo-icono,
+  .clases-online .texto-clases .titulo-icono-asesorias,
+  .clases-online .texto-viajes .titulo-icono,
+  .clases-online .texto-viajes .titulo-icono-asesorias,
+  .clases-online .texto-asesorias .titulo-icono,
+  .clases-online .texto-asesorias .titulo-icono-asesorias,
+  .viajes-uk .texto-clases .titulo-icono,
+  .viajes-uk .texto-clases .titulo-icono-asesorias,
+  .viajes-uk .texto-viajes .titulo-icono,
+  .viajes-uk .texto-viajes .titulo-icono-asesorias,
+  .viajes-uk .texto-asesorias .titulo-icono,
+  .viajes-uk .texto-asesorias .titulo-icono-asesorias,
+  .asesorias .texto-clases .titulo-icono,
+  .asesorias .texto-clases .titulo-icono-asesorias,
+  .asesorias .texto-viajes .titulo-icono,
+  .asesorias .texto-viajes .titulo-icono-asesorias,
+  .asesorias .texto-asesorias .titulo-icono,
+  .asesorias .texto-asesorias .titulo-icono-asesorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .clases-online .texto-clases h2,
+  .clases-online .texto-viajes h2,
+  .clases-online .texto-asesorias h2,
+  .viajes-uk .texto-clases h2,
+  .viajes-uk .texto-viajes h2,
+  .viajes-uk .texto-asesorias h2,
+  .asesorias .texto-clases h2,
+  .asesorias .texto-viajes h2,
+  .asesorias .texto-asesorias h2 {
+    font-size: 22px;
+  }
+  .clases-online .texto-clases p,
+  .clases-online .texto-viajes p,
+  .clases-online .texto-asesorias p,
+  .viajes-uk .texto-clases p,
+  .viajes-uk .texto-viajes p,
+  .viajes-uk .texto-asesorias p,
+  .asesorias .texto-clases p,
+  .asesorias .texto-viajes p,
+  .asesorias .texto-asesorias p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .clases-online .texto-clases .boton-conoce-mas,
+  .clases-online .texto-clases .boton-viaje,
+  .clases-online .texto-clases .boton-asesorias,
+  .clases-online .texto-viajes .boton-conoce-mas,
+  .clases-online .texto-viajes .boton-viaje,
+  .clases-online .texto-viajes .boton-asesorias,
+  .clases-online .texto-asesorias .boton-conoce-mas,
+  .clases-online .texto-asesorias .boton-viaje,
+  .clases-online .texto-asesorias .boton-asesorias,
+  .viajes-uk .texto-clases .boton-conoce-mas,
+  .viajes-uk .texto-clases .boton-viaje,
+  .viajes-uk .texto-clases .boton-asesorias,
+  .viajes-uk .texto-viajes .boton-conoce-mas,
+  .viajes-uk .texto-viajes .boton-viaje,
+  .viajes-uk .texto-viajes .boton-asesorias,
+  .viajes-uk .texto-asesorias .boton-conoce-mas,
+  .viajes-uk .texto-asesorias .boton-viaje,
+  .viajes-uk .texto-asesorias .boton-asesorias,
+  .asesorias .texto-clases .boton-conoce-mas,
+  .asesorias .texto-clases .boton-viaje,
+  .asesorias .texto-clases .boton-asesorias,
+  .asesorias .texto-viajes .boton-conoce-mas,
+  .asesorias .texto-viajes .boton-viaje,
+  .asesorias .texto-viajes .boton-asesorias,
+  .asesorias .texto-asesorias .boton-conoce-mas,
+  .asesorias .texto-asesorias .boton-viaje,
+  .asesorias .texto-asesorias .boton-asesorias {
+    width: 300px;
+    max-width: 800px;
+    height: 60px !important;
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+  }
+}
 /* BOTON DE WHATSAPP*/
 @media (max-width: 575px) {
   .floating-whatsapp {
