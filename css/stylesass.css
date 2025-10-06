@@ -662,7 +662,7 @@ h2.testimonio {
   align-items: center;
   align-content: center;
   padding: 15px 10px;
-  width: 95%;
+  width: 85%;
   max-width: 2000px;
   height: auto;
   margin: 15px auto;
@@ -683,7 +683,7 @@ h2.testimonio {
   flex-direction: column !important;
   align-items: center !important;
   gap: 10px;
-  width: 100%;
+  width: 85%;
   height: 60%;
 }
 .clases-online .img-clases,
@@ -727,7 +727,7 @@ h2.testimonio {
 .asesorias .texto-asesorias {
   text-align: center !important;
   padding: 0;
-  max-width: 560px;
+  max-width: 800px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -949,7 +949,7 @@ h2.testimonio {
   width: 500px;
   max-width: 800px;
   height: 60px !important;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 10px auto;
   right: auto !important;
   left: auto !important;
   transform: none !important;
@@ -1366,6 +1366,59 @@ img {
     width: 28px;
   }
 }
+@media (min-width: 576px) and (max-width: 1023px) {
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  footer section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  footer section div {
+    margin: 10px 0;
+    flex: 1 1 100%;
+    align-items: center;
+    text-align: center;
+  }
+  footer section div img {
+    width: 70px;
+    height: auto;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  footer section h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  footer .a-footer {
+    font-size: 14px;
+    text-align: center;
+    margin: 6px 0;
+  }
+  footer p {
+    font-size: 14px;
+    text-align: center;
+  }
+  footer p.footer_derechos_reservados {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer .redes {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  footer .redes .iconos {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  footer .redes .iconos .icono-redes {
+    width: 28px;
+  }
+}
 /*--------------INDEX------------------*/
 @media (max-width: 575px) {
   h1 {
@@ -1446,6 +1499,38 @@ img {
     font-size: 16px;
   }
 }
+@media (min-width: 576px) and (max-width: 1023px) {
+  .carousel-item img {
+    height: 350px;
+  }
+  .carousel-caption-custom {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    max-width: 900px;
+    height: auto;
+  }
+  .carousel-caption-custom h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+  .carousel-caption-custom p {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .carousel-caption-custom .botones_container a#consulta {
+    font-size: 18px;
+    padding: 8px 16px;
+    width: auto;
+  }
+}
 /*-------------SOBRE MI------------------*/
 @media (max-width: 575px) {
   .sobre-mi {
@@ -1469,6 +1554,30 @@ img {
   }
   .sobre-mi .texto-sobre-mi p {
     font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+  .sobre-mi {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  .sobre-mi .img-silvia {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .sobre-mi .img-silvia img {
+    width: 100%;
+    height: auto;
+  }
+  .sobre-mi .texto-sobre-mi {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .sobre-mi .texto-sobre-mi h2 {
+    font-size: 32px;
+  }
+  .sobre-mi .texto-sobre-mi p {
+    font-size: 18px;
   }
 }
 @media (max-width: 575px) {
@@ -1799,7 +1908,7 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 15px 10px;
-    width: 95%;
+    width: 85%;
     max-width: 700px;
     height: 30%;
     margin: 15px auto;
@@ -1820,7 +1929,7 @@ img {
     flex-direction: column !important;
     align-items: center !important;
     gap: 10px;
-    width: 100%;
+    width: 85%;
     height: 30%;
   }
   .clases-online .img-clases,

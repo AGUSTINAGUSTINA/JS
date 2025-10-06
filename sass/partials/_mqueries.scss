@@ -241,6 +241,71 @@
     }
 }
 
+@include tablet {
+
+     footer {
+        padding: 20px 10px;
+        text-align: center;
+
+        section {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            div {
+                margin: 10px 0;
+                flex: 1 1 100%;
+                align-items: center;
+                text-align: center;
+
+                img {
+                    width: 70px;
+                    height: auto;
+                    max-width: 80%;
+                    margin: 0 auto;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+
+        .a-footer {
+            font-size: 14px;
+            text-align: center;
+            margin: 6px 0;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: center;
+
+            &.footer_derechos_reservados {
+                font-size: 14px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .redes {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            .iconos {
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .icono-redes {
+                    width: 28px;
+                }
+            }
+        }
+    }
+}
+
 
 /*--------------INDEX------------------*/
 
@@ -354,6 +419,48 @@
     }
 }
 
+@include tablet {
+     .carousel-item img {
+        height: 350px;
+    }
+
+    .carousel-caption-custom {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%); 
+        text-align: center;
+        padding: 20px;
+        width: 50%;
+        max-width: 900px;
+        height: auto;
+       
+        h2 {
+            font-size: 32px;
+            margin-bottom: 5px;
+
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            margin-bottom: 15px;
+
+        }
+
+        .botones_container a#consulta {
+            font-size: 18px;
+            padding: 8px 16px;
+            width: auto;
+           
+        }
+    }
+
+
+}
+
 /*-------------SOBRE MI------------------*/
 @include mobile {
     .sobre-mi {
@@ -380,6 +487,36 @@
 
             p {
                 font-size: 16px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .sobre-mi {
+        flex-direction: column;
+        padding: 30px 15px;
+
+        .img-silvia {
+            max-width: 100%;
+            padding: 0 10px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .texto-sobre-mi {
+            padding: 0 10px;
+            text-align: center;
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 18px;
             }
         }
     }
@@ -552,7 +689,7 @@
         flex-direction: column;
         align-items: center;
         padding: 15px 10px;
-        width: 95%;
+        width: 85%;
         max-width: 700px;
         height: 30%;
         margin: 15px auto;
@@ -567,7 +704,7 @@
             flex-direction: column !important;
             align-items: center !important;
             gap: 10px;
-            width: 100%;
+            width: 85%;
             height: 30%;
         }
 
