@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mixins' as *;
+@use 'extend' as *;
 
 .espacio-entre-secciones {
   height: 60px; // o lo que te parezca armónico
@@ -7,333 +9,145 @@
 
 //---------------------------------CLASES ONLINE
 
-.clases-online {
-    background-color: rgba(38, 70, 83, 0.08); // #264653 al 8%
-    padding: 60px 20px;
-    width: 70vw;
-    align-items: flex-start;
-    margin-top: 30px;
+ .clases-online,
+    .viajes-uk,
+    .asesorias {
+        @include card-common;
 
-    .contenido-clases {
-        display: flex;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .img-clases {
-        flex: 1 1 400px;
-
-        img {
-            width: 70%;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-    }
-
-    .texto-clases {
-        flex: 1 1 500px;
-        display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
+        align-items: center;
+        align-content: center;
+        padding: 15px 10px;
+        width: 95%;
+        max-width: 2000px;
+        height: auto;
+        margin: 15px auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        position: relative;
 
-        .titulo-icono {
+        .contenido-clases,
+        .contenido-viajes,
+        .contenido-asesorias {
             display: flex;
-            align-items: center;
-            gap: 12px;
+            flex-direction: column !important;
+            align-items: center !important;
+            gap: 10px;
+            width: 100%;
+            height: 60%;
+        }
 
-            h2 {
-                font-family: $h;
-                font-size: 32px;
-                color: #264653;
-            }
+        // Imagen arriba también en tablet
+        .img-clases,
+        .img-viajes,
+        .img-asesorias {
+            order: -1;
+            width: 100%;
+            max-height: 300px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
 
             img {
-                width: 32px;
-                height: 32px;
+                width: 300px;
+                height: 300px;
+                border-radius: $card-radius;
+                object-fit: cover;
             }
         }
 
-        .resaltado {
-            font-family: $p;
-            font-weight: $bold;
-            margin-top: 20px;
-            font-size: 18px;
-            color: #264653;
-        }
-
-        p {
-            font-family: $p;
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-            margin-top: 10px;
-            text-align: left;
-        }
-
-        .boton-conoce-mas {
+        .texto-clases,
+        .texto-viajes,
+        .texto-asesorias {
+            text-align: center !important;
+            padding: 0;
+            max-width: 560px;
+            margin: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            align-content: center;
-            height: 90px;
             gap: 10px;
-            background-color: #264653;
-            color: white;
-            padding: 20px 20px;
-            border-radius: 8px;
-            padding-left: 25%;
-            margin-top: 20px;
-            margin-left: 5%; // ocupa mitad del fondo
-            transform: translateX(50%); // se mueve hacia afuera visualmente
-            width: 556px;
 
-            a {
-                text-decoration: none;
-                color: white;
-                font-family: $p;
-                font-weight: $thin;
+            .titulo-icono,
+            .titulo-icono-asesorias {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+
+                h2 {
+                    font-size: 32px;
+                    margin: 0;
+                    color: $btn-bg;
+                }
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .resaltado {
+                font-size: 20px !important;
+                margin: 8px 0;
+                font-weight: $bold;
+                color: $btn-bg;
+            }
+
+            p {
+                font-size: 18px !important;
+                font-weight: $regular;
+                margin: 0 0 12px 0;
+                color: black;
+                line-height: 1.5;
                 text-align: center;
             }
 
-            img {
-                width: 20px;
-                height: 20px;
-            }
-        }
-    }
-}
-
-.titulo-icono {
-  display: flex;
-  align-items: center;
-  gap: 10px; // espacio entre icono y texto
-
-  h2 {
-    font-family: $h;
-    font-size: 32px;
-    color: $primario;
-    margin: 0;
-  }
-
-  img {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-
-//---------------------------------VIAJES
-
-.viajes-uk {
-  background-color: rgba(38, 70, 83, 0.08); // #264653 al 8%
-  padding: 60px 20px;
-  width: 70vw;
-  margin-left: auto; // se alinea a la derecha
-  margin-right: 0;
-  align-items: center;
-  min-height: 400px;
-
-  .contenido-viajes {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    min-height: 400px;
-  }
-
-  .texto-viajes {
-    flex: 1 1 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-    margin-left: 60px;
-
-    .titulo-icono {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      h2 {
-        font-family: $h;
-        font-size: 32px;
-        color: #264653;
-      }
-
-      img {
-        width: 32px;
-        height: 32px;
-      }
-    }
-
-    .resaltado {
-      font-family: $p;
-      font-weight: $bold;
-      margin-top: 20px;
-      font-size: 18px;
-      color: #264653;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-family: $p;
-      font-size: 16px;
-      color: #333;
-      line-height: 1.6;
-      margin-top: 0px !important;
-      text-align: left;
-    }
-
-    .boton-viaje {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #264653;
-      color: white;
-      padding: 0 40px;
-      height: 90px;
-      border-radius: 8px;
-      width: 556px;
-      max-width: 100%;
-      margin: 30px auto 0 auto;
-      position: relative;
-      right: 380px;
-
-      a {
-        text-decoration: none;
-        color: white;
-        font-family: $p;
-        font-weight: $thin;
-        font-size: 18px;
-        white-space: nowrap;
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
-      }
-    }
-  }
-
-  .img-viajes {
-    flex: 0 0 auto;
-
-    img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 12px;
-      object-fit: cover;
-      display: block;
-    }
-  }
-}
-
-//---------------------------------ASESORIAS
-.asesorias {
-    background-color: rgba(38, 70, 83, 0.08); // #264653 al 8%
-    padding: 60px 20px;
-    width: 70vw;
-    align-items: flex-start;
-    margin-top: 30px;
-    margin-bottom: 50px;
-
-    .contenido-asesorias {
-        display: flex;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 0 auto;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .img-asesorias {
-        flex: 1 1 400px;
-
-        img {
-            width: 60%;
-            border-radius: 12px;
-            object-fit: cover;
-        }
-    }
-
-    .texto-asesorias {
-        flex: 1 1 500px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-
-        .titulo-icono-asesorias {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
-            h2 {
-                font-family: $h;
-                font-size: 32px;
-                color: #264653;
-            }
-
-            img {
-                width: 32px;
-                height: 32px;
-            }
-        }
-
-        .resaltado {
-            font-family: $p;
-            font-weight: $bold;
-            margin-top: 20px;
-            font-size: 18px;
-            color: #264653;
-        }
-
-        p {
-            font-family: $p;
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-            margin-top: 10px;
-            text-align: left;
-            padding-right: 10px;
-        }
-
-        .boton-asesorias {
-            display: flex;
-            align-items: center;
-            align-content: center;
-            height: 90px;
-            gap: 10px;
-            background-color: #264653;
-            color: white;
-            padding: 20px 20px;
-            border-radius: 8px;
-            padding-left: 25%;
-            margin-top: 20px;
-            margin-left: 5%; // ocupa mitad del fondo
-            transform: translateX(50%); // se mueve hacia afuera visualmente
-            width: 556px;
-
-            a {
-                text-decoration: none;
+            // Botones generales
+            .boton-conoce-mas,
+            .boton-viaje,
+            .boton-asesorias {
+                width: 500px;
+                max-width: 800px;
+                height: 60px !important;
+                padding: 8px 16px;
+                border-radius: $btn-radius;
+                background-color: $btn-bg;
                 color: white;
-                font-family: $p;
-                font-weight: $thin;
-                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                position: relative !important;
+                transform: none !important;
+                margin: 10px auto 10px auto;
+
+                a {
+                    font-size: 18px;
+                    font-weight: $regular;
+                    color: white;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    text-align: center;
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
             }
 
-            img {
-                width: 20px;
-                height: 20px;
+            // Especificidad para el botón "viaje"
+            .boton-viaje {
+                width: 500px;
+                max-width: 800px;
+                height: 60px !important;
+                margin: 10px auto 0 auto;
+                right: auto !important;
+                left: auto !important;
+                transform: none !important;
             }
         }
     }
-}
 
