@@ -195,7 +195,7 @@ a.nav_turnos:hover {
 
 .span-brand {
   font-family: "Roboto flex";
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 0px;
   font-weight: 600;
   color: #264653;
@@ -1023,6 +1023,7 @@ h2.testimonio {
 .sobre-mi .resaltado {
   font-weight: bold;
   font-family: "Roboto flex";
+  font-size: 18px;
 }
 
 .lista-servicios {
