@@ -1,4 +1,6 @@
 @use 'variables' as *;
+
+
 .bienvenida {
   font-family: $h;
   color: $primario;
@@ -93,7 +95,7 @@
   width: 100%; 
   max-width: 1200px; 
   margin: 0 auto;
-  border: 1px solid transparent; /* para debug, borrá luego */
+  border: 1px solid transparent; 
 }
 
 .card-mvv {
@@ -104,11 +106,11 @@
     height: 320px;
   text-align: center;
   max-width: 320px;
-  /* margin: auto; */
+ 
   margin-bottom: 20px;
   margin-top: 50px;
 
-  flex: 0 0 320px; /* ancho fijo, no crece ni se achica */
+  flex: 0 0 320px; 
 
   .icon-container {
     position: absolute;
@@ -159,28 +161,27 @@ h2.testimonio{
 .testimonios-section {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   flex-wrap: wrap;
-  padding: 20px 20px;
+  padding: 12px 12px;
   align-items: flex-start;
-  width: 100%; /* importante */
-  max-width: 1200px; /* opcional para no ser muy ancho */
-  margin: 0 auto;
-  border: 1px solid transparent; /* para debug, borrá luego */
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 10px;
+  border: 1px solid transparent; 
 }
 
 .card-testimonios {
   background-color: #C9C1D0;
   border-radius: 28px;
-  padding: 40px 20px 20px 20px;
+  padding: 30px 20px 20px 20px;
   position: relative;
   text-align: center;
-  max-width: 320px;
-  /* margin: auto; */
-  margin-bottom: 20px;
-  margin-top: 50px;
+  max-width: 450px;
+  width: 420px;
+  margin: 40px 10px 40px 10px;
   border: 2px solid $secundario;
-  flex: 0 0 320px; /* ancho fijo, no crece ni se achica */
+  flex: 0 0 320px; 
 
   .icon-container {
     position: absolute;
@@ -199,22 +200,24 @@ h2.testimonio{
   }
 
   .card-content {
-    margin-top: 30px;
+    margin-top: 20px;
 
     .card-name {
       display: inline-block;
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 12px;
+      margin-top: 12px;
       text-transform: uppercase;
       color: $secundario;
     }
 
     p {
-      font-size: 14px;
+      font-size: 16px;
       color: black;
       line-height: 1.5;
       margin: 0;
+      font-family: $p;
     }
   }
 }
@@ -236,4 +239,60 @@ h2.testimonio{
   padding: 50px 180px 50px 180px;
   color: $bg-1;
   text-shadow: #333;
+}
+
+// ===========================
+// SECCIÓN: THANKS
+// ===========================
+.thanks {
+  background-color: $bg2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0px;
+  margin: 0%;
+
+  // 📌 Texto
+  .thanks-text {
+    text-align: center;
+    max-width: 800px; // controla el ancho en desktop
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-family: $h;
+      font-weight: $bold;
+      font-size: $size-h2;
+      color: $primario;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $p;
+      color: $primario;
+      font-size: 18px;
+      font-weight: $semibold;
+      line-height: 1.6;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+  }
+
+  // 📌 Imagen
+  .thanks-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; // 👈 pega la imagen a la izquierda
+    margin: 0;
+
+    img {
+      display: block;
+      width: 69%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+    }
+  }
 }
