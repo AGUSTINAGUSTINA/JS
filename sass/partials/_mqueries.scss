@@ -464,37 +464,41 @@
 }
 
 // ===========================
-  // THANKS 
-  // ===========================
+// THANKS 
+// ===========================
 
-  @include tablet {
-   
-    .thanks-text {
-      max-width: 90%;
-      h2 {
-        font-size: 1.8rem;
-      }
-      p {
-        font-size: 16px;
-        line-height: 1.5;
-      }
-    }
-  }
-
-  @include mobile {
-   
+@include tablet {
 
     .thanks-text {
-      max-width: 80%; 
-      h2 {
-        font-size: 20PX !important;
-      }
-      p {
-        font-size: 14px !important;
-        line-height: 1.4;
-      }
+        max-width: 90%;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
     }
-  }
+}
+
+@include mobile {
+
+
+    .thanks-text {
+        max-width: 80%;
+
+        h2 {
+            font-size: 20PX !important;
+        }
+
+        p {
+            font-size: 14px !important;
+            line-height: 1.4;
+        }
+    }
+}
 
 /*-------------SOBRE MI------------------*/
 @include mobile {
@@ -860,138 +864,185 @@
 
 
 // ===========================
+// SECCIÓN: CLASES ONLINE
+// ===========================
+@include mobile {
+    .clases-online-full.py-5 {
+     padding: 2% 2% !important;
+     .col-lg-8.px-5 {
+        padding: 4% 4% !important;
+     }
+
+        h2.mb-4.text-primary {
+            font-size: 20px;
+        }
+    }
+    p.lead{
+       font-size: 16px !important; 
+    }
+    li.list-group-item.ps-0.aos-init.aos-animate{
+        font-size: 16px;
+        font-family: $p;
+}
+}
+
+// ===========================
+// SECCIÓN: ASESORIAS
+// ===========================
+@include mobile {
+.asesoria-educativa.py-5 {
+     padding: 2% 2% !important;
+    .col-lg-8.mb-4.mb-lg-0{
+        padding: 4% 4% !important;
+
+    h2.mb-4{
+        font-size: 20px ;
+    }
+     p.lead{
+       font-size: 16px !important; 
+    }
+
+    li.list-group-item.ps-0.aos-init.aos-animate{
+        font-size: 16px;
+        font-family: $p;
+    }
+}
+}
+}
+
+// ===========================
 // SECCIÓN: FOTOS GRUPALES
 // ===========================
 .fotos-grupales {
-  background-color: $bg3;
-  padding: 60px 0;
+    background-color: $bg3;
+    padding: 60px 0;
 
-  h2 {
-    font-family: $h;
-    font-size: $size-h2;
-    color: $primario;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-
-  // Carrusel principal
-  #carruselGrupal {
-    .carousel-inner {
-      border-radius: 16px;
-      box-shadow: 0px 4px 12px rgba($primario, 0.25);
-      overflow: hidden;
+    h2 {
+        font-family: $h;
+        font-size: $size-h2;
+        color: $primario;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 
-    // Imagen del carrusel
-    .img-carrusel-grupal {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      transition: transform 0.4s ease-in-out;
+    // Carrusel principal
+    #carruselGrupal {
+        .carousel-inner {
+            border-radius: 16px;
+            box-shadow: 0px 4px 12px rgba($primario, 0.25);
+            overflow: hidden;
+        }
+
+        // Imagen del carrusel
+        .img-carrusel-grupal {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        // Efecto hover en desktop
+        @include desktop {
+            .carousel-item:hover .img-carrusel-grupal {
+                transform: scale(1.02);
+            }
+        }
+
+        // Etiqueta sobre la foto
+        .grupo-etiqueta {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            background-color: rgba($primario, 0.7);
+            color: $bg-1;
+            font-family: $p;
+            font-weight: $semibold;
+            font-size: 1rem;
+            padding: 4px 10px;
+            border-radius: 8px;
+            backdrop-filter: blur(4px);
+            pointer-events: none;
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        // Indicadores del carrusel
+        .carousel-indicators {
+            bottom: -30px; // los mueve por debajo de la imagen
+
+            [data-bs-target] {
+                background-color: rgba($primario, 0.3);
+            }
+
+            .active {
+                background-color: $primario;
+            }
+        }
+
+        // Flechas de control
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1) brightness(0.8);
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            transition: opacity 0.3s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 
-    // Efecto hover en desktop
-    @include desktop {
-      .carousel-item:hover .img-carrusel-grupal {
-        transform: scale(1.02);
-      }
+    // ANIMACIÓN FADE ENTRE SLIDES
+    .carousel-fade .carousel-item {
+        opacity: 0;
+        transition-property: opacity;
+        transition-duration: 0.8s;
     }
 
-    // Etiqueta sobre la foto
-    .grupo-etiqueta {
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      background-color: rgba($primario, 0.7);
-      color: $bg-1;
-      font-family: $p;
-      font-weight: $semibold;
-      font-size: 1rem;
-      padding: 4px 10px;
-      border-radius: 8px;
-      backdrop-filter: blur(4px);
-      pointer-events: none;
-      display: inline-block;
-      white-space: nowrap;
+    .carousel-fade .carousel-item.active,
+    .carousel-fade .carousel-item-next.carousel-item-start,
+    .carousel-fade .carousel-item-prev.carousel-item-end {
+        opacity: 1;
     }
 
-    // Indicadores del carrusel
-    .carousel-indicators {
-      bottom: -30px; // los mueve por debajo de la imagen
+    // ===========================
+    // RESPONSIVE
+    // ===========================
+    @include tablet {
+        .img-carrusel-grupal {
+            height: 320px;
+        }
 
-      [data-bs-target] {
-        background-color: rgba($primario, 0.3);
-      }
-
-      .active {
-        background-color: $primario;
-      }
+        .grupo-etiqueta {
+            font-size: 0.85rem;
+            padding: 4px 8px;
+            bottom: 5px;
+            left: 5px;
+            text-align: right;
+        }
     }
 
-    // Flechas de control
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      filter: invert(1) brightness(0.8);
+    @include mobile {
+        .img-carrusel-grupal {
+            height: 230px;
+        }
+
+        .grupo-etiqueta {
+            font-size: 0.6rem !important;
+            padding: 3px 8px;
+            bottom: 3px;
+            bottom: auto;
+            left: 5px;
+            text-align: left;
+        }
+
+        .carousel-indicators {
+            bottom: -20px; // más cerca del borde inferior en mobile
+        }
     }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      transition: opacity 0.3s ease;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  // ANIMACIÓN FADE ENTRE SLIDES
-  .carousel-fade .carousel-item {
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: 0.8s;
-  }
-
-  .carousel-fade .carousel-item.active,
-  .carousel-fade .carousel-item-next.carousel-item-start,
-  .carousel-fade .carousel-item-prev.carousel-item-end {
-    opacity: 1;
-  }
-
-  // ===========================
-  // RESPONSIVE
-  // ===========================
-  @include tablet {
-    .img-carrusel-grupal {
-      height: 320px;
-    }
-
-    .grupo-etiqueta {
-      font-size: 0.85rem;
-      padding: 4px 8px;
-      bottom: 5px;
-      left: 5px;
-      text-align: right;
-    }
-  }
-
-  @include mobile {
-    .img-carrusel-grupal {
-      height: 230px;
-    }
-
-    .grupo-etiqueta {
-      font-size: 0.6rem !important;
-      padding: 3px 8px;
-      bottom: 3px;
-      bottom: auto;
-      left: 5px;
-      text-align: left;
-    }
-
-    .carousel-indicators {
-      bottom: -20px; // más cerca del borde inferior en mobile
-    }
-  }
 }
 
 

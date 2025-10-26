@@ -1126,6 +1126,13 @@ h2.testimonio {
   font-size: 18px;
   color: #444;
 }
+.asesoria-educativa .list-group-item .material-symbols-outlined {
+  color: #005D66;
+  font-size: 26px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  font-variation-settings: "wght" 100 "GRAD" 0;
+}
 .asesoria-educativa img {
   max-width: 100%;
   height: 75vh;
@@ -1141,19 +1148,19 @@ h2.testimonio {
   font-weight: 700;
   color: #593058;
   margin-top: 20px;
-  text-align: center;
+  text-align: start;
 }
 .asesoria-educativa .botones_container {
   display: flex;
   justify-content: start;
   margin-top: 20px;
-  margin-left: 315px;
+  padding-left: 0%;
 }
 .asesoria-educativa .botones_container a#contactar {
   background-color: #264653;
   color: white;
   font-family: "Roboto flex";
-  font-weight: bold;
+  font-weight: 400;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 10px;
@@ -1164,61 +1171,76 @@ h2.testimonio {
   background-color: #CDD3D6;
   color: #264653;
   border: 2px solid #264653;
+  font-weight: 600;
 }
 
-.clases-online-full {
-  background-color: transparent;
-  width: 100vw;
-  max-width: 100%;
+.clases-online-full.py-5 {
+  width: 100%;
+  max-width: 1200px;
   overflow: hidden;
 }
-.clases-online-full h2 {
+.clases-online-full.py-5 .col-lg-8.px-5 {
+  padding: 15px !important;
+}
+.clases-online-full.py-5 h2 {
   color: #264653 !important;
   font-weight: 600;
   text-align: start;
   font-family: "Playfair Display", serif;
   font-size: 32px;
 }
-.clases-online-full .lead {
+.clases-online-full.py-5 .lead {
   font-size: 18px;
   color: black;
   font-family: "Roboto flex";
   text-align: start;
 }
-.clases-online-full ul li {
+.clases-online-full.py-5 ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   background: transparent;
   border: none;
   font-size: 18px;
   padding-left: 0;
   color: black;
 }
-.clases-online-full .botones_container {
+.clases-online-full.py-5 ul li .material-symbols-outlined {
+  color: #005D66;
+  font-size: 26px;
+  flex-shrink: 0;
+  margin-top: 4px;
+  font-variation-settings: "wght" 100 "GRAD" 0;
+}
+
+.botones_container {
   display: flex;
   justify-content: start;
   margin-top: 20px;
-  margin-left: 350px;
+  padding-left: 5%;
 }
-.clases-online-full .botones_container a#contactar {
+.botones_container a#contactar {
   background-color: #264653;
   color: white;
   font-family: "Roboto flex";
-  font-weight: bold;
+  font-weight: 400;
   padding: 12px 24px;
   text-decoration: none;
   border-radius: 10px;
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
-.clases-online-full .botones_container a#contactar:hover {
+.botones_container a#contactar:hover {
   background-color: #CDD3D6;
   color: #264653;
   border: 2px solid #264653;
+  font-weight: 600;
 }
 
 img {
   height: 100%;
   width: auto;
-  object-fit: cover;
+  object-fit: cover !important;
 }
 
 @media (max-width: 575px) {
@@ -2271,6 +2293,42 @@ img {
     right: auto !important;
     left: auto !important;
     transform: none !important;
+  }
+}
+@media (max-width: 575px) {
+  .clases-online-full.py-5 {
+    padding: 2% 2% !important;
+  }
+  .clases-online-full.py-5 .col-lg-8.px-5 {
+    padding: 4% 4% !important;
+  }
+  .clases-online-full.py-5 h2.mb-4.text-primary {
+    font-size: 20px;
+  }
+  p.lead {
+    font-size: 16px !important;
+  }
+  li.list-group-item.ps-0.aos-init.aos-animate {
+    font-size: 16px;
+    font-family: "Roboto flex";
+  }
+}
+@media (max-width: 575px) {
+  .asesoria-educativa.py-5 {
+    padding: 2% 2% !important;
+  }
+  .asesoria-educativa.py-5 .col-lg-8.mb-4.mb-lg-0 {
+    padding: 4% 4% !important;
+  }
+  .asesoria-educativa.py-5 .col-lg-8.mb-4.mb-lg-0 h2.mb-4 {
+    font-size: 20px;
+  }
+  .asesoria-educativa.py-5 .col-lg-8.mb-4.mb-lg-0 p.lead {
+    font-size: 16px !important;
+  }
+  .asesoria-educativa.py-5 .col-lg-8.mb-4.mb-lg-0 li.list-group-item.ps-0.aos-init.aos-animate {
+    font-size: 16px;
+    font-family: "Roboto flex";
   }
 }
 .fotos-grupales {

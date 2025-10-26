@@ -1,17 +1,20 @@
 @use 'variables' as *;
 
-.clases-online-full {
-  background-color: transparent;
-  width: 100vw;
-  max-width: 100%;
+
+.clases-online-full.py-5 {
+  width: 100%;
+  max-width: 1200px; // límite en desktop
   overflow: hidden;
+  .col-lg-8.px-5{
+    padding: 15px !important;
+  }
 
   h2 {
     color: $primario !important;
     font-weight: $semibold;
     text-align: start;
     font-family: $h;
-    font-size: 32px; // lo dejé igual a vos
+    font-size: 32px;
   }
 
   .lead {
@@ -22,24 +25,37 @@
   }
 
   ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
     background: transparent;
     border: none;
     font-size: 18px;
     padding-left: 0;
     color: black;
-  }
 
-  .botones_container {
+
+    .material-symbols-outlined {
+      color: #005D66;
+      font-size: 26px;
+      flex-shrink: 0;
+      margin-top: 4px;
+      font-variation-settings: 'wght' 100 'GRAD' 0;
+    }
+  }
+}
+
+.botones_container {
   display: flex;
   justify-content: start;
   margin-top: 20px;
-  margin-left: 350px;
+  padding-left: 5%;
 
   a#contactar {
     background-color: $primario;
     color: white;
     font-family: $p;
-    font-weight: bold;
+    font-weight: $regular;
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 10px; // bien redondeado
@@ -50,15 +66,17 @@
       background-color: $bg2;
       color: $primario;
       border: 2px solid $primario;
+      font-weight: $semibold;
     }
   }
 }
 
 
-}
+
+
 
 img {
   height: 100%;
   width: auto;
-  object-fit: cover;
+  object-fit: cover !important;
 }
