@@ -430,7 +430,7 @@ h2.testimonio {
   font-weight: 400;
   color: #264653;
   margin-left: 35px;
-  text-align: left;
+  text-align: center;
 }
 
 .testimonios-section {
@@ -441,7 +441,7 @@ h2.testimonio {
   padding: 12px 12px;
   align-items: flex-start;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 10px;
   border: 1px solid transparent;
 }
@@ -507,10 +507,11 @@ h2.testimonio {
   font-weight: 400;
   font-family: "Playfair Display", serif;
   font-size: 24px;
-  background-color: #005D66;
+  background-color: #486E79;
   padding: 50px 180px 50px 180px;
   color: #F4F4F4;
   text-shadow: #333;
+  border-radius: 0px 85px 85px 0px;
 }
 
 .thanks {
@@ -1511,7 +1512,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     width: 90%;
     max-width: 600px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1519,13 +1520,12 @@ img {
   .carousel-caption-custom h2 {
     font-size: 18px;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
   }
   .carousel-caption-custom p {
     font-size: 14px;
     color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
   }
   .carousel-caption-custom .botones_container a#consulta {
     font-size: 12px;
@@ -1534,10 +1534,11 @@ img {
     font-weight: 700;
     color: #264653;
     background: #CDD3D6;
+    margin-top: 2px !important;
   }
-  .frase {
-    font-size: 16px;
-    padding: 10px;
+  span.frase {
+    font-size: 18px;
+    padding: 30px;
   }
   .mvv-section {
     flex-direction: column;

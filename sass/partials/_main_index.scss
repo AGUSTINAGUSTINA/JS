@@ -156,7 +156,7 @@ h2.testimonio{
   font-weight: $regular;
   color: $primario;
   margin-left: 35px;
-  text-align: left;
+  text-align: center;
 }
 .testimonios-section {
   display: flex;
@@ -166,7 +166,7 @@ h2.testimonio{
   padding: 12px 12px;
   align-items: flex-start;
   width: 100%; 
-  max-width: 1200px; 
+  max-width: 1500px; 
   margin: 0 10px;
   border: 1px solid transparent; 
 }
@@ -235,10 +235,11 @@ h2.testimonio{
   font-weight: $regular;
   font-family: $h;
   font-size: 24px;
-  background-color: #005D66;
+  background-color: #486E79;
   padding: 50px 180px 50px 180px;
   color: $bg-1;
   text-shadow: #333;
+  border-radius: 0px 85px 85px 0px;
 }
 
 // ===========================
@@ -259,6 +260,7 @@ h2.testimonio{
     max-width: 800px; // controla el ancho en desktop
     margin: 0 auto;
     text-align: center;
+  
 
     h2 {
       font-family: $h;
